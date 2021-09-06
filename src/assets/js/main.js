@@ -121,7 +121,7 @@ var toastList = toastElList.map(function (toastEl) {
     var options = {
         series: [100, 78, 89],
         chart: {
-        height: 320,
+        height: 220,
         type: 'radialBar',
       },
       colors: ['#28a745', '#ffc107', '#dc3545'],
