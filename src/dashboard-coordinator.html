@@ -3,35 +3,24 @@
 
   <head>
     @@include("partials/head.html")
-    <title>Dashboard | Online Program Student Schedule</title>
+    <title>Coordinator Dashboard | Online Program Student Schedule</title>
   </head>
 
   <body>
     <div id="db-wrapper">
       <!-- navbar vertical -->
-      @@include('partials/navbar-vertical.html', {
+      @@include('partials/navbar-vertical-coor.html', {
       "page": "dashboard",
 
       })
        <!-- Page content -->
       <div id="page-content">
-        @@include("partials/header.html")
+        @@include("partials/header-coor.html")
         <!-- Container fluid -->
         <div class="bg-primary pt-10 pb-21" style="background-color:black"></div>
         <div class="container-fluid mt-n22 px-6" >
           <div class="row" >
-            <div class="col-lg-12 col-md-12 col-12">
-              <!-- Page header -->
-              <div>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="mb-2 mb-lg-0">
-                  </div>
-                  <div>
-                    <a href="#" class="btn btn-white">Create New Program</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
             <div class="col-xl-3 col-lg-6 col-md-12 col-12 mt-6">
               <!-- card -->
               <div class="card rounded-3">
@@ -41,17 +30,16 @@
                   <div class="d-flex justify-content-between align-items-center
                     mb-3">
                     <div>
-                      <h4 class="mb-0">Programs</h4>
+                      <h4 class="mb-0">Assigned Programs</h4>
                     </div>
                     <div class="icon-shape icon-md bg-light-primary text-primary
                       rounded-1">
-                      <i data-feather="layers" >
-                      </i>
+                      <i data-feather="layers" ></i>
                     </div>
                   </div>
                   <!-- project number -->
                   <div>
-                    <h1 class="fw-bold">18</h1>
+                    <h1 class="fw-bold">2</h1>
                     <p class="mb-0"><span class="text-dark me-2"></span></p>
                   </div>
                 </div>
@@ -75,7 +63,7 @@
                   </div>
                   <!-- project number -->
                   <div>
-                    <h1 class="fw-bold">132</h1>
+                    <h1 class="fw-bold">32</h1>
                     <p class="mb-0"><span class="text-dark me-2"></span></p>
                   </div>
                 </div>
@@ -99,8 +87,8 @@
                   </div>
                   <!-- project number -->
                   <div>
-                    <h1 class="fw-bold">12</h1>
-                    <p class="mb-0"><span class="text-dark me-2">1</span>Pending Emails</p>
+                    <h1 class="fw-bold">122</h1>
+                    <p class="mb-0"><span class="text-dark me-2">10</span>Pending Emails</p>
                   </div>
                 </div>
               </div>
@@ -124,7 +112,6 @@
                         <th>Program name</th>
                         <th>Courses</th>
                         <th>Students</th>
-                        <th>Coordinators</th>
                         <th>Welcome Email</th>
                         <th>Schedule Email</th>
                       </tr>
@@ -149,27 +136,6 @@
                           </div></td>
                         <td class="align-middle">10</td>
                         <td class="align-middle">123</td>
-                        <td class="align-middle"><div class="avatar-group">
-                            <span class="avatar avatar-sm">
-                              <img alt="avatar"
-                                src="assets/images/avatar/avatar-1.jpg"
-                                class="rounded-circle">
-                            </span>
-                            <span class="avatar avatar-sm">
-                              <img alt="avatar"
-                                src="assets/images/avatar/avatar-2.jpg"
-                                class="rounded-circle">
-                            </span>
-                            <!--<span class="avatar avatar-sm">
-                              <img alt="avatar"
-                                src="assets/images/avatar/avatar-3.jpg"
-                                class="rounded-circle">
-                            </span>-->
-                            <span class="avatar avatar-sm avatar-primary">
-                              <span class="avatar-initials rounded-circle
-                                fs-6">+2</span>
-                            </span>
-                          </div></td>
                         <td class="align-middle text-dark"><div
                             class="float-start me-3">15%</div>
                           <div class="mt-2">
@@ -209,27 +175,6 @@
                           </div></td>
                         <td class="align-middle">15</td>
                         <td class="align-middle">321</td>
-                        <td class="align-middle"><div class="avatar-group">
-                            <span class="avatar avatar-sm">
-                              <img alt="avatar"
-                                src="assets/images/avatar/avatar-4.jpg"
-                                class="rounded-circle">
-                            </span>
-                            <span class="avatar avatar-sm">
-                              <img alt="avatar"
-                                src="assets/images/avatar/avatar-5.jpg"
-                                class="rounded-circle">
-                            </span>
-                            <!--<span class="avatar avatar-sm">
-                              <img alt="avatar"
-                                src="assets/images/avatar/avatar-6.jpg"
-                                class="rounded-circle">
-                            </span>-->
-                            <span class="avatar avatar-sm avatar-primary">
-                              <span class="avatar-initials rounded-circle
-                                fs-6">+1</span>
-                            </span>
-                          </div></td>
                         <td class="align-middle text-dark"><div
                             class="float-start me-3">35%</div>
                           <div class="mt-2">
@@ -258,12 +203,16 @@
 
             </div>
           </div>
+        </div>
           <!-- row  -->
-          <div class="row my-6">
-            <div class="col-xl-4 col-lg-12 col-md-12 col-12 mb-6 mb-xl-0">
+          <div class="row mt-6">
+            <div class="col-md-12 col-12">
               <!-- card  -->
-              <div class="card h-100">
-                <!-- card body  -->
+              <div class="card">
+                <!-- card header  -->
+                <div class="card-header bg-white border-bottom-0 py-4">
+                  <h4 class="mb-0"></h4>
+                </div>
                 <div class="card-body">
                   <div class="d-flex align-items-center
                     justify-content-between">
@@ -274,7 +223,7 @@
                   </div>
                   <!-- chart  -->
                   <div class="mb-8">
-                    <div id="perfomanceChart"></div>
+                    <div id="perfomanceChart-coor"></div>
                   </div>
                   <!-- icon with content  -->
                   <div class="d-flex align-items-center justify-content-around">
@@ -298,96 +247,8 @@
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <!-- card  -->
-            <div class="col-xl-8 col-lg-12 col-md-12 col-12">
-              <div class="card h-70">
-                <!-- card header  -->
-                <div class="card-header bg-white border-bottom-0 py-4">
-                  <h4 class="mb-0">Teams </h4>
-                </div>
-                <!-- table  -->
-                <div class="table-responsive">
-                  <table class="table text-nowrap">
-                    <thead class="table-light">
-                      <tr>
-                        <th>Name</th>
-                        <th>Role</th>
-                        <th>Last Activity</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td class="align-middle">
-                          <div class="d-flex align-items-center">
-                            <div>
-                              <img src="assets/images/avatar/avatar-2.jpg"
-                                alt="" class="avatar-md avatar rounded-circle">
-                            </div>
-                            <div class="ms-3 lh-1">
-                              <h5 class="fw-bold mb-1">Bihani Tamang</h5>
-                              <p class="mb-0">bihani@example.com</p>
-                            </div>
-                          </div>
-                        </td>
-                        <td class="align-middle">Coordinator</td>
-                        <td class="align-middle">3 February, 2021</td>
-                      </tr>
-                      <tr>
-                        <td class="align-middle">
-                          <div class="d-flex align-items-center">
-                            <div>
-                              <img src="assets/images/avatar/avatar-2.jpg"
-                                alt="" class="avatar-md avatar rounded-circle">
-                            </div>
-                            <div class="ms-3 lh-1">
-                              <h5 class="fw-bold mb-1">Meghana Bokka</h5>
-                              <p class="mb-0">Meghana@example.com</p>
-                            </div>
-                          </div>
-                        </td>
-                        <td class="align-middle">Admin</td>
-                        <td class="align-middle">Today</td>
-                      </tr>
-                      <tr>
-                        <td class="align-middle">
-                          <div class="d-flex align-items-center">
-                            <div>
-                              <img src="assets/images/avatar/avatar-2.jpg"
-                                alt="" class="avatar-md avatar rounded-circle">
-                            </div>
-                            <div class="ms-3 lh-1">
-                              <h5 class="fw-bold mb-1">Mounika Kancharla</h5>
-                              <p class="mb-0">mounika@example.com</p>
-                            </div>
-                          </div>
-                        </td>
-                        <td class="align-middle">Coordinator</td>
-                        <td class="align-middle">Yesterday</td>
-                      </tr>
-                      <tr>
-                        <td class="align-middle">
-                          <div class="d-flex align-items-center">
+                
 
-                            <div>
-                              <img src="assets/images/avatar/avatar-2.jpg"
-                                alt="" class="avatar-md avatar rounded-circle">
-                            </div>
-
-                            <div class="ms-3 lh-1">
-                              <h5 class="fw-bold mb-1">Manogna Bonigala</h5>
-                              <p class="mb-0">manogna@example.com</p>
-                            </div>
-                          </div>
-                        </td>
-                        <td class="align-middle">Admin</td>
-                        <td class="align-middle">3 May, 2021</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
             </div>
           </div>
         </div>

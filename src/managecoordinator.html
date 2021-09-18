@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    @@include("partials/head.html")
+    <title>Dashboard | Online Program Student Schedule</title>
+  </head>
+
+  <body>
+    <div id="db-wrapper">
+      <!-- navbar vertical -->
+      @@include('partials/navbar-vertical.html', {
+      "page": "dashboard",
+
+      })
+       <!-- Page content -->
+      <div id="page-content">
+        @@include("partials/header.html")
+        <!-- Container fluid -->
+        <div class="bg-primary pt-10 pb-21" style="background-color:black"></div>
+        <div class="container-fluid mt-n22 px-6" >
+          <div class="row" >
+            <div class="col-lg-12 col-md-12 col-12">
+                <!-- Page header -->
+                <div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="mb-2 mb-lg-0">
+                      <h3 class="mb-0 fw-bold text-white">Manage Coordinators</h3>
+                    </div>
+                    <div>
+                      <a href="#"><button type="button" class="btn btn-white" data-bs-toggle="modal" data-bs-target="#exampleModal" data-whatever="@getbootstrap">Add Coordinator</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelOne" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabelOne">New Admin
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">School Email:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                          </div>
+                          <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Select Program:</label>
+                            <select class="form-select" multiple aria-label="multiple select example">
+                              <option selected>Open this select menu</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a href="newAdmin.html" ><button type="button" class="btn btn-primary" >Save</button> </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- row  -->
+          <div class="row mt-6">
+            <div class="col-md-12 col-12">
+              <!-- card  -->
+              <div class="card">
+                <!-- table  -->
+  <div class="row">
+      <div class="col-md-12">
+          <div class="card">
+              <div class="card-body">
+              </div>
+              <div class="table-responsive">
+                  <table class="table no-wrap user-table mb-0">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="border-0 text-uppercase font-medium">Name</th>
+                        <th scope="col" class="border-0 text-uppercase font-medium">Email</th>
+                        <th scope="col" class="border-0 text-uppercase font-medium">User Type</th>
+                        <th scope="col" class="border-0 text-uppercase font-medium">Manage</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                            <h5 class="font-medium mb-0">Daniel Kristeen</h5>
+                            <span class="text-muted">Texas, Unitedd states</span>
+                        </td>
+                        <td>
+                            <span class="text-muted">daniel@website.com</span><br>
+                            <span class="text-muted">999 - 444 - 555</span>
+                        </td>
+                        <td>
+                          <select class="form-control category-select" id="exampleFormControlSelect1">
+                            
+                            <option>Admin</option>
+                            <option>Coordinator</option>
+                          </select>
+                        </td>
+                        <td>
+                           <button type="button" class="btn btn-outline-info btn-circle btn-lg btn-circle" data-bs-toggle="tooltip" data-placement="top" title="Save Changes"> <i data-feather="save" >
+                      </i> </button>
+                         <button type="button" class="btn btn-outline-info btn-circle btn-lg btn-circle-disable ml-2" data-bs-toggle="tooltip" data-placement="top" title="Disable User">   <i data-feather="x"  >
+                      </i></button>
+                          <button type="button" class="btn btn-outline-info btn-circle btn-lg btn-circle ml-2" data-bs-toggle="tooltip" data-placement="top"
+                          title="Delete"> <i data-feather="trash-2" >
+                      </i> </button>
+                     
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                            <h5 class="font-medium mb-0">Emma Smith</h5>
+                            <span class="text-muted">Texas, Unitedd states</span>
+                        </td>
+                        
+                        <td>
+                            <span class="text-muted">daniel@website.com</span><br>
+                            <span class="text-muted">999 - 444 - 555</span>
+                        </td>
+                        <td>
+                          <select class="form-control category-select" id="exampleFormControlSelect1">
+                            
+                            <option>Admin</option>
+                            <option>Coordinator</option>
+                          </select>
+                        </td>
+                        <td>
+                           <button type="button" class="btn btn-outline-info btn-circle btn-lg btn-circle" data-bs-toggle="tooltip" data-placement="top" title="Save Changes"> <i data-feather="save" >
+                      </i> </button>
+                      <button type="button" class="btn btn-outline-info btn-circle btn-lg btn-circle-enable ml-2" data-bs-toggle="tooltip" data-placement="top"
+                      title="Enable User">   <i data-feather="check" class="enable">
+                  </i></button>
+                          <button type="button" class="btn btn-outline-info btn-circle btn-lg btn-circle ml-2" data-bs-toggle="tooltip" data-placement="top"
+                          title="Delete"> <i data-feather="trash-2" >
+                      </i> </button>
+                          
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                            <h5 class="font-medium mb-0">Olivia Johnson</h5>
+                            <span class="text-muted">Texas, Unitedd states</span>
+                        </td>
+                        
+                        <td>
+                            <span class="text-muted">daniel@website.com</span><br>
+                            <span class="text-muted">999 - 444 - 555</span>
+                        </td>
+                          
+                        <td>
+                          <select class="form-control category-select" id="exampleFormControlSelect1">
+                            
+                            <option>Admin</option>
+                            <option>Coordinator</option>
+                          </select>
+                        </td>
+                        <td>
+                           <button type="button" class="btn btn-outline-info btn-circle btn-lg btn-circle" data-bs-toggle="tooltip" data-placement="top" title="Save Changes"> <i data-feather="save" >
+                      </i> </button>
+                         <button type="button" class="btn btn-outline-info btn-circle btn-lg btn-circle-disable ml-2" data-bs-toggle="tooltip" data-placement="top" title="Disable User">   <i data-feather="x"  >
+                      </i></button>
+                          <button type="button" class="btn btn-outline-info btn-circle btn-lg btn-circle ml-2" data-bs-toggle="tooltip" data-placement="top"
+                          title="Delete"> <i data-feather="trash-2" >
+                      </i> </button>
+                          
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                            <h5 class="font-medium mb-0">Isabella Williams</h5>
+                            <span class="text-muted">Texas, Unitedd states</span>
+                        </td>
+                        
+                        <td>
+                            <span class="text-muted">daniel@website.com</span><br>
+                            <span class="text-muted">999 - 444 - 555</span>
+                        </td>
+                        <td>
+                          <select class="form-control category-select" id="exampleFormControlSelect1">
+                            
+                            <option>Admin</option>
+                            <option>Coordinator</option>
+                          </select>
+                        </td>
+                        <td>
+                           <button type="button" class="btn btn-outline-info btn-circle btn-lg btn-circle" data-bs-toggle="tooltip" data-placement="top" title="Save Changes"> <i data-feather="save" >
+                      </i> </button>
+                          <button type="button" class="btn btn-outline-info btn-circle btn-lg btn-circle-enable ml-2" data-bs-toggle="tooltip" data-placement="top"
+                          title="Enable User">   <i data-feather="check" class="enable">
+                      </i></button>
+                          <button type="button" class="btn btn-outline-info btn-circle btn-lg btn-circle ml-2" data-bs-toggle="tooltip" data-placement="top"
+                          title="Delete"> <i data-feather="trash-2" >
+                      </i> </button>
+                          
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                            <h5 class="font-medium mb-0">Sophia Jones</h5>
+                            <span class="text-muted">Texas, Unitedd states</span>
+                        </td>
+                        
+                        <td>
+                            <span class="text-muted">daniel@website.com</span><br>
+                            <span class="text-muted">999 - 444 - 555</span>
+                        </td>
+                        <td>
+                          <select class="form-control category-select" id="exampleFormControlSelect1">
+                            
+                            <option>Admin</option>
+                            <option>Coordinator</option>
+                          </select>
+                        </td>
+                        <td>
+                           <button type="button" class="btn btn-outline-info btn-circle btn-lg btn-circle" data-bs-toggle="tooltip" data-placement="top" title="Save Changes"> <i data-feather="save" >
+                      </i> </button>
+                         <button type="button" class="btn btn-outline-info btn-circle btn-lg btn-circle-disable ml-2" data-bs-toggle="tooltip" data-placement="top" title="Disable User">   <i data-feather="x"  >
+                      </i></button>
+                          <button type="button" class="btn btn-outline-info btn-circle btn-lg btn-circle ml-2" data-bs-toggle="tooltip" data-placement="top"
+                          title="Delete"> <i data-feather="trash-2" >
+                      </i> </button>
+                          
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                            <h5 class="font-medium mb-0">Charlotte Brown</h5>
+                            <span class="text-muted">Texas, Unitedd states</span>
+                        </td>
+                        
+                        <td>
+                            <span class="text-muted">daniel@website.com</span><br>
+                            <span class="text-muted">999 - 444 - 555</span>
+                        </td>
+                        <td>
+                          <select class="form-control category-select" id="exampleFormControlSelect1">
+                            
+                            <option>Admin</option>
+                            <option>Coordinator</option>
+                          </select>
+                        </td>
+                        <td>
+                          <button type="button" class="btn btn-outline-info btn-circle btn-lg btn-circle" data-bs-toggle="tooltip" data-placement="top" title="Save Changes"> <i data-feather="save" >
+                      </i> </button>
+                          <button type="button" class="btn btn-outline-info btn-circle btn-lg btn-circle-disable ml-2" data-bs-toggle="tooltip" data-placement="top" title="Disable User">   <i data-feather="x"  >
+                      </i></button>
+                          <button type="button" class="btn btn-outline-info btn-circle btn-lg btn-circle ml-2" data-bs-toggle="tooltip" data-placement="top" title="Delete"> <i data-feather="trash-2" >
+                      </i> </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </div>
+          </div>
+      </div>
+  </div>
+            </div>
+          </div>
+          <!-- row  -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    @@include("partials/scripts.html")
+
+    
+      <style type="text/css">
+        .btn-circle.btn-lg, .btn-group-lg>.btn-circle.btn {
+          width: 50px;
+          height: 50px;
+          font-size: 18px;
+          line-height: 23px;
+      }
+
+      [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+        cursor: pointer;
+    }
+    .btn-circle {
+      border-radius: 100%;
+      width: 40px;
+      height: 40px;
+      padding: 10px;
+  }
+  .btn-circle-disable{
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+  .btn-circle-enable {
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+
+  .enable{
+    width: 24px;
+  }
+  .btn-circle-disable:hover{
+    background-color: rgb(226, 36, 36);
+  }
+  .btn-circle-enable:hover{
+    background-color: green;
+  }
+      </style>
+
+
+
+  </body>
+
+</html>

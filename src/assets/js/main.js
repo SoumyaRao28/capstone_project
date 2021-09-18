@@ -119,7 +119,7 @@ var toastList = toastElList.map(function (toastEl) {
 
     if ($("#perfomanceChart").length) {
     var options = {
-        series: [100, 78, 89],
+        series: [89, 78, 100],
         chart: {
         height: 220,
         type: 'radialBar',
@@ -155,6 +155,45 @@ var toastList = toastElList.map(function (toastEl) {
 
     }
 
+// Perfomance Chart coor
+
+if ($("#perfomanceChart-coor").length) {
+  var options = {
+      series: [89, 78, 100],
+      chart: {
+      height: 400,
+      type: 'radialBar',
+    },
+    colors: ['#28a745', '#ffc107', '#dc3545'],
+    stroke: {
+lineCap: "round",
+},
+    plotOptions: {
+
+      radialBar: {
+        startAngle: -168,
+      endAngle: -450,
+        hollow: {
+
+          size: '55%',
+        },
+        track: {
+
+
+          background: 'transaprent',},
+        dataLabels: {
+            show: false,
+
+        }
+      }
+    },
+
+    };
+
+    var chart = new ApexCharts(document.querySelector("#perfomanceChart-coor"), options);
+    chart.render();
+
+  }
 
 
 // offcanvas
@@ -214,3 +253,15 @@ var offcanvasList = offcanvasElementList.map(function (offcanvasEl) {
 
 
 })();
+
+$(document).ready(function(){
+
+  var multipleCancelButton = new Choices('#choices-multiple-remove-button', {
+  removeItemButton: true,
+  maxItemCount:5,
+  searchResultLimit:5,
+  renderChoiceLimit:5
+  });
+  
+  
+  });

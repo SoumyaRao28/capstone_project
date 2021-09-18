@@ -4,6 +4,7 @@
 <head>
   @@include("../partials/head.html")
   <title>Sign In</title>
+  <script defer src="validations.js"></script>
 </head>
 
 <body style="background-color:#006747">
@@ -20,8 +21,6 @@
               <a ><img src="../assets/images/brand/logo/N-Horiz-G.png" class="mb-2" alt=""></a>
               <p class="mb-6">Please enter your Northwest Credentials.</p>
             </div>
-            <!-- Form -->
-            <form>
               <!-- Username -->
               <div class="mb-3">
                 <label for="email" class="form-label">Username or email</label>
@@ -45,14 +44,9 @@
               <div>
                 <!-- Button -->
                 <div class="d-grid">
-                  <button type="submit" class="btn btn-primary">Sign
-                    in</button>
+                  <input type="submit" onClick="login()" value="Sign In" class="btn btn-primary"></input>
                 </div>
-
               </div>
-
-
-            </form>
           </div>
         </div>
       </div>
@@ -61,5 +55,8 @@
   <!-- Scripts -->
   @@include("../partials/scripts.html")
 </body>
-
+<!-- Login -->
+<script>  
+ 
+  </script>  
 </html>
