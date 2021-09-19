@@ -198,24 +198,10 @@
                
                         <!-- Nav item -->
                         <li class="nav-item">
-                            <a class="nav-link has-arrow @@if (context.page_group !== 'Email') { collapsed }" href="#!" data-bs-toggle="collapse" data-bs-target="#navEmail" aria-expanded="false" aria-controls="navEmail">
+                            <a class="nav-link @@if (context.page === 'borders') { active }" href="adminEmail.html" aria-expanded="false">
                                 <i data-feather="mail" class="nav-icon icon-xs me-2" >
                             </i> Email
                             </a>
-                            <div id="navEmail" class="collapse @@if (context.page_group === 'Email') { show }" data-bs-parent="#sideNavbar">
-                                <ul class="nav flex-column">
-                                    <li class="nav-item">
-                                        <a class="nav-link @@if (context.page === 'typography') { active }" href="#" aria-expanded="false">
-                                            Manage Template
-                                        </a>
-                                    </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link @@if (context.page === 'borders') { active }" href="#" aria-expanded="false">
-                                                Send Emails
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    </div>
                                     </li>
                                     
                     </ul>

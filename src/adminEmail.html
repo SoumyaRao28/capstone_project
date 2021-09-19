@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    @@include("partials/head.html")
+    <title>Dashboard | Online Program Student Schedule</title>
+  </head>
+
+  <body>
+    <div id="db-wrapper">
+      <!-- navbar vertical -->
+      @@include('partials/navbar-vertical.html', {
+      "page": "dashboard",
+
+      })
+       <!-- Page content -->
+      <div id="page-content">
+        @@include("partials/header.html")
+        <!-- Container fluid -->
+        <div class="bg-primary pt-10 pb-21" style="background-color:black"></div>
+        <div class="container-fluid mt-n22 px-6" >
+          <div class="row" >
+            <div class="col-lg-12 col-md-12 col-12">
+                <!-- Page header -->
+                <div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="mb-2 mb-lg-0">
+                      <h3 class="mb-0 fw-bold text-white">Email Templates</h3>
+                    </div>
+                    <div>
+                      <a href="#"><button type="button" class="btn btn-white" data-bs-toggle="modal" data-bs-target="#exampleModal" data-whatever="@getbootstrap">Add New Template</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelOne" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabelOne">New Admin
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Title:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                          </div>
+                          <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a href="#" ><button type="button" class="btn btn-primary" >Save</button> </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- row  -->
+          <div>
+          </div>
+          <div class="modal fade" id="templateOne" tabindex="-1" role="dialog" aria-labelledby="templateOneLabelOne" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="templateOneLabelOne">Welcome Letter Template
+                  </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label">Title:</label>
+                      <input type="text" class="form-control" id="recipient-name" value="Welcome Letter Template" disabled>
+                    </div>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label">Message:</label>
+                      <textarea class="form-control" id="message-text" placeholder="With supporting text below as a natural lead-in to additional content." disabled></textarea>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="templateOneEdit" tabindex="-1" role="dialog" aria-labelledby="templateOneEditLabelOne" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="templateOneEditLabelOne">Welcome Letter Template
+                  </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label">Title:</label>
+                      <input type="text" class="form-control" id="recipient-name" value="Welcome Letter Template" >
+                    </div>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label">Message:</label>
+                      <textarea class="form-control" id="message-text" placeholder="With supporting text below as a natural lead-in to additional content." ></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <a href="#" ><button type="button" class="btn btn-primary" >Save</button> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="templateOneSend" tabindex="-1" role="dialog" aria-labelledby="templateOneSendLabelOne" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="templateOneLabelTwoSend">Send Email
+                  </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label">Select Program:</label>
+                      <select class="form-select" multiple aria-label="multiple select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <a href="#" ><button type="button" class="btn btn-primary" >Send</button> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="templateTwo" tabindex="-1" role="dialog" aria-labelledby="templateOneLabelTwo" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="templateOneLabelTwo">Welcome Letter Template
+                  </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label">Title:</label>
+                      <input type="text" class="form-control" id="recipient-name" value="Schedule Letter Template" disabled>
+                    </div>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label">Message:</label>
+                      <textarea class="form-control" id="message-text" placeholder="With supporting text below as a natural lead-in to additional content." disabled></textarea>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="templateTwoEdit" tabindex="-1" role="dialog" aria-labelledby="templateOneLabelTwoEdit" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="templateOneLabelTwoEdit">Welcome Letter Template
+                  </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label">Title:</label>
+                      <input type="text" class="form-control" id="recipient-name" value="Schedule Letter Template" >
+                    </div>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label">Message:</label>
+                      <textarea class="form-control" id="message-text" placeholder="With supporting text below as a natural lead-in to additional content." ></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <a href="#" ><button type="button" class="btn btn-primary" >Save</button> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="templateTwoSend" tabindex="-1" role="dialog" aria-labelledby="templateOneLabelTwoSend" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="templateOneLabelTwoSend">Send Email
+                  </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label">Select Program:</label>
+                      <select class="form-select" multiple aria-label="multiple select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <a href="#" ><button type="button" class="btn btn-primary" >Send</button> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-6">
+            <div class="col-md-12 col-12">
+              <!-- card  -->
+              <div class="card" style="display: flex; flex-direction: row; padding:20px;">
+                <div class="col-xl-3 col-lg-6 col-md-12 col-12 mt-6" style="margin: 0 70px 0 10px; ">
+              <div class="card" style="width: 18rem; padding: 10px; ">
+                <div class="card-body">
+                  <input type="radio"  name="btnradio" id="btnradio2" autocomplete="off" style="height:15px; width:15px;">
+                  <h5 class="card-title">Welcome letter Template</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#templateOne" data-whatever="@getbootstraptemplateone">View</a>
+                  <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#templateOneEdit" data-whatever="@getbootstraptemplateoneEdit">Edit</a>
+                  <a href="#" class="btn btn-primary" id='send' data-bs-toggle="modal" data-bs-target="#templateOneSend" data-whatever="@getbootstraptemplateoneSend">Send</a>
+
+                </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-md-12 col-12 mt-6" style="margin: 0 70px 0 10px; ">
+              <div class="card" style="width: 18rem; padding: 10px;">
+                <div class="card-body">
+                  <input type="radio"  name="btnradio" id="btnradio3" autocomplete="off" style="height:15px; width:15px;">
+                  <h5 class="card-title">Schedule Letter Template</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#templateTwo" data-whatever="@getbootstraptemplatetwo">View</a>
+                  <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#templateTwoEdit" data-whatever="@getbootstraptemplatetwoEdit">Edit</a>
+                  <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#templateTwoSend" data-whatever="@getbootstraptemplatetwoSend">Send</a>
+
+                </div>
+            </div>
+          </div>
+          
+          </div>
+          <!-- row  -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    @@include("partials/scripts.html")
+
+    
+      <style type="text/css">
+        .btn-circle.btn-lg, .btn-group-lg>.btn-circle.btn {
+          width: 50px;
+          height: 50px;
+          font-size: 18px;
+          line-height: 23px;
+      }
+
+      [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+        cursor: pointer;
+    }
+    .btn-circle {
+      border-radius: 100%;
+      width: 40px;
+      height: 40px;
+      padding: 10px;
+  }
+  .btn-circle-disable{
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+  .btn-circle-enable {
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+
+  .enable{
+    width: 24px;
+  }
+  .btn-circle-disable:hover{
+    background-color: rgb(226, 36, 36);
+  }
+  .btn-circle-enable:hover{
+    background-color: green;
+  }
+      </style>
+  </body>
+</html>
