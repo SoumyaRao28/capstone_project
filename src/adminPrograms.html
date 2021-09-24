@@ -32,11 +32,11 @@
                     </div>
                   </div>
                 </div>
-                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelOne" aria-hidden="true">
-                  <div class="modal-dialog" role="document">
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelOne" aria-hidden="true" data-target=".bd-example-modal-lg">
+                  <div class="modal-dialog modal-md" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabelOne">New Admin
+                        <h5 class="modal-title" id="exampleModalLabelOne">Create a Program
                         </h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
 
@@ -45,12 +45,28 @@
                       <div class="modal-body">
                         <form>
                           <div class="mb-3">
-                            <label for="recipient-name" class="col-form-label">Title:</label>
+                            <label for="recipient-name" class="col-form-label">Program Code:</label>
                             <input type="text" class="form-control" id="recipient-name">
+
+                            <label for="recipient-name" class="col-form-label">Program Name:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+
+                            <label for="recipient-name" class="col-form-label">Program Start Date:</label>
+                            <input type="date" class="form-control" id="recipient-name">
                           </div>
+                          
                           <div class="mb-3">
-                            <label for="message-text" class="col-form-label">Message:</label>
+                            <label for="message-text" class="col-form-label">Program Description:</label>
                             <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+                            <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Standard Count:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Expedited Count:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                            
                           </div>
                         </form>
                       </div>
@@ -71,7 +87,7 @@
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="templateOneLabelOne">Welcome Letter Template
+                  <h5 class="modal-title" id="templateOneLabelOne">View Program
                   </h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
 
@@ -80,12 +96,27 @@
                 <div class="modal-body">
                   <form>
                     <div class="mb-3">
-                      <label for="recipient-name" class="col-form-label">Title:</label>
-                      <input type="text" class="form-control" id="recipient-name" value="Welcome Letter Template" disabled>
+                      <label for="recipient-name" class="col-form-label">Program Code:</label>
+                      <input type="text" class="form-control" id="recipient-name" value="PGM-100" disabled>
+
+                      <label for="message-text" class="col-form-label">Program Name:</label>
+                      <input type="text" class="form-control" id="recipient-name" value="Master of Business Administration - General Online" disabled>
+
+                      <label for="recipient-name" class="col-form-label">Program Start Date:</label>
+                      <input type="text" class="form-control" id="recipient-name" value="01/01/2021" disabled>
+
+                      
+                      <label for="message-text" class="col-form-label">Program Description:</label>
+                      <textarea class="form-control" id="message-text" placeholder="With supporting text below as a natural lead-in to additional content." disabled></textarea>
+                     
+                      
+                      <label for="recipient-name" class="col-form-label">Standard Count:</label>
+                      <input type="text" class="form-control" id="recipient-name" value="12" disabled>
+                      <label for="recipient-name" class="col-form-label">Expedited Count:</label>
+                      <input type="text" class="form-control" id="recipient-name" value="5" disabled>
                     </div>
                     <div class="mb-3">
-                      <label for="message-text" class="col-form-label">Message:</label>
-                      <textarea class="form-control" id="message-text" placeholder="With supporting text below as a natural lead-in to additional content." disabled></textarea>
+                      
                     </div>
                   </form>
                 </div>
@@ -96,7 +127,7 @@
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="templateOneEditLabelOne">Welcome Letter Template
+                  <h5 class="modal-title" id="templateOneEditLabelOne">Edit Program
                   </h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
 
@@ -105,18 +136,23 @@
                 <div class="modal-body">
                   <form>
                     <div class="mb-3">
-                      <label for="recipient-name" class="col-form-label">Title:</label>
-                      <input type="text" class="form-control" id="recipient-name" value="Welcome Letter Template" >
-                    </div>
-                    <div class="mb-3">
-                      <label for="message-text" class="col-form-label">Message:</label>
-                      <textarea class="form-control" id="message-text" placeholder="With supporting text below as a natural lead-in to additional content." ></textarea>
+                      <label for="recipient-name" class="col-form-label">Program Name:</label>
+                      <input type="text" class="form-control" id="recipient-name" value="Master of Business Administration - General Management">
+
+                      <label for="recipient-name" class="col-form-label">Program Start Date:</label>
+                      <input type="text" class="form-control" id="recipient-name" value="01/01/2021" >
+                      <label for="message-text" class="col-form-label">Program Description:</label>
+                      <textarea class="form-control" id="message-text" placeholder="With supporting text below as a natural lead-in to additional content."></textarea>
+                      <label for="recipient-name" class="col-form-label">Standard Count:</label>
+                      <input type="text" class="form-control" id="recipient-name" value="12" >
+                      <label for="recipient-name" class="col-form-label">Expedited Count:</label>
+                      <input type="text" class="form-control" id="recipient-name" value="5" >
                     </div>
                   </form>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <a href="#" ><button type="button" class="btn btn-primary" >Save</button> </a>
+                  <a href="adminProgramsEdit.html" ><button type="button" class="btn btn-primary" >Save</button> </a>
                 </div>
               </div>
             </div>
@@ -125,7 +161,7 @@
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="templateOneLabelTwoSend">Send Email
+                  <h5 class="modal-title" id="templateOneLabelTwoSend">Add Coordinators
                   </h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
 
@@ -134,12 +170,15 @@
                 <div class="modal-body">
                   <form>
                     <div class="mb-3">
-                      <label for="message-text" class="col-form-label">Select Program:</label>
+                      <label for="message-text" class="col-form-label">Select Coordinators:</label>
                       <select class="form-select" multiple aria-label="multiple select example">
-                        <option selected>Open this select menu</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                        <option selected>-----Select One/More Coordinators-----</option>
+                        <option value="1">Daniel Kristeen</option>
+                        <option value="2">Emma Smith</option>
+                        <option value="3">Olivia Johnson</option>
+                        <option value="4">Isabella Williams</option>
+                        <option value="5">Sophia Jones</option>
+                        <option value="5">Charlotte Brown</option>
                       </select>
                     </div>
                   </form>
@@ -155,7 +194,7 @@
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="templateOneLabelTwo">Welcome Letter Template
+                  <h5 class="modal-title" id="templateOneLabelTwo">Edit Program
                   </h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
 
@@ -164,7 +203,7 @@
                 <div class="modal-body">
                   <form>
                     <div class="mb-3">
-                      <label for="recipient-name" class="col-form-label">Title:</label>
+                      <label for="recipient-name" class="col-form-label">Program Code:</label>
                       <input type="text" class="form-control" id="recipient-name" value="Schedule Letter Template" disabled>
                     </div>
                     <div class="mb-3">
@@ -200,7 +239,7 @@
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <a href="#" ><button type="button" class="btn btn-primary" >Save</button> </a>
+                  <a href="#" ><button type="button" class="btn btn-success" >Save</button> </a>
                 </div>
               </div>
             </div>
@@ -230,7 +269,7 @@
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <a href="#" ><button type="button" class="btn btn-primary" >Send</button> </a>
+                  <a href="#" ><button type="button" class="btn btn-success" >Send</button> </a>
                 </div>
               </div>
             </div>
@@ -242,7 +281,7 @@
               <div class="card" style="display: flex; flex-direction: column; padding:20px; ">
                   <div class="input-group mb-3">
                     <span class="input-group-text" id="inputGroup-sizing-default"><i data-feather="search" ></i></span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    <input type="text" class="w-25 p-2" style="border:1px solid grey; border-radius: 5px;" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                   </div>
                 <div style="display: flex; flex-direction: row; ">
                   <div class="col-xl-3 col-lg-6 col-md-12 col-12 mt-6" style="margin: 0 70px 0 10px; ">
@@ -255,16 +294,17 @@
                           mb-3">
                           <div>
                             <h4 class="mb-0"> <a href="#"  data-bs-toggle="modal" data-bs-target="#templateOne" data-whatever="@getbootstraptemplateone" style=" color: #0060B6;
-                              text-decoration: none;">MBA online</a></h4>
+                              text-decoration: none;">Master of Business Administration - General Management</a></h4>
                           </div>
                         </div>
                         <!-- project number -->
                         <div>
-                          <h1 class="fw-bold">18</h1>
+                          <h1 class="fw-bold">88</h1>
                         </div>
-                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#templateOneEdit" data-whatever="@getbootstraptemplateoneEdit"><i data-feather="edit" ></i></a>
-                      <a href="adminProgramsDelete.html" class="btn btn-primary"><i data-feather="trash-2" ></i></a>
-                      <a href="#" class="btn btn-primary" id='send' data-bs-toggle="modal" data-bs-target="#templateOneSend" data-whatever="@getbootstraptemplateoneSend" ><i data-feather="user-plus" ></i></a>
+                        <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#templateOneEdit" data-whatever="@getbootstraptemplateoneEdit"><i data-feather="edit" ></i></a>
+                      
+                      <a href="#" class="btn btn-light" id='send' data-bs-toggle="modal" data-bs-target="#templateOneSend" data-whatever="@getbootstraptemplateoneSend" ><i data-feather="user-plus" ></i></a>
+                      <a href="adminProgramsDelete.html" class="btn btn-light"><i data-feather="trash-2" ></i></a>
                       </div>
                     </div>
                   </div>
@@ -278,16 +318,18 @@
                           mb-3">
                           <div>
                             <h4 class="mb-0"> <a href="#"  data-bs-toggle="modal" data-bs-target="#templateOne" data-whatever="@getbootstraptemplateone" style=" color: #0060B6;
-                              text-decoration: none;">MIS</a></h4>
+                              text-decoration: none;">Master of Business Administration - Human Resource</a></h4>
                           </div>
                         </div>
                         <!-- project number -->
                         <div>
-                          <h1 class="fw-bold">180</h1>
+                          <h1 class="fw-bold">10</h1>
                         </div>
-                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#templateOneEdit" data-whatever="@getbootstraptemplateoneEdit"><i data-feather="edit" ></i></a>
-                      <a href="adminProgramsDelete.html" class="btn btn-primary"><i data-feather="trash-2" ></i></a>
-                      <a href="#" class="btn btn-primary" id='send' data-bs-toggle="modal" data-bs-target="#templateOneSend" data-whatever="@getbootstraptemplateoneSend"><i data-feather="user-plus" ></i></a>
+                        <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#templateOneEdit" data-whatever="@getbootstraptemplateoneEdit"><i data-feather="edit" ></i></a>
+                      
+                      <a href="#" class="btn btn-light" id='send' data-bs-toggle="modal" data-bs-target="#templateOneSend" data-whatever="@getbootstraptemplateoneSend"><i data-feather="user-plus" ></i></a>
+
+                      <a href="adminProgramsDelete.html" class="btn btn-light"><i data-feather="trash-2" ></i></a>
                       </div>
                     </div>
                   </div>
@@ -301,16 +343,18 @@
                           mb-3">
                           <div>
                             <h4 class="mb-0"> <a href="#"  data-bs-toggle="modal" data-bs-target="#templateOne" data-whatever="@getbootstraptemplateone" style=" color: #0060B6;
-                              text-decoration: none;">ACS</a></h4>
+                              text-decoration: none;">Master of Business Administration - Marketing</a></h4>
                           </div>
                         </div>
                         <!-- project number -->
                         <div>
-                          <h1 class="fw-bold">170</h1>
+                          <h1 class="fw-bold">70</h1>
                         </div>
-                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#templateOneEdit" data-whatever="@getbootstraptemplateoneEdit"><i data-feather="edit" ></i></a>
-                      <a href="adminProgramsDelete.html" class="btn btn-primary"><i data-feather="trash-2" ></i></a>
-                      <a href="#" class="btn btn-primary" id='send' data-bs-toggle="modal" data-bs-target="#templateOneSend" data-whatever="@getbootstraptemplateoneSend"><i data-feather="user-plus" ></i></a>
+                        <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#templateOneEdit" data-whatever="@getbootstraptemplateoneEdit"><i data-feather="edit" ></i></a>
+                      
+                      <a href="#" class="btn btn-light" id='send' data-bs-toggle="modal" data-bs-target="#templateOneSend" data-whatever="@getbootstraptemplateoneSend"><i data-feather="user-plus" ></i></a>
+
+                      <a href="adminProgramsDelete.html" class="btn btn-light"><i data-feather="trash-2" ></i></a>
                       </div>
                     </div>
                   </div>
@@ -326,16 +370,18 @@
                     mb-3">
                     <div>
                       <h4 class="mb-0"> <a href="#"  data-bs-toggle="modal" data-bs-target="#templateOne" data-whatever="@getbootstraptemplateone" style=" color: #0060B6;
-                        text-decoration: none;">MBA online</a></h4>
+                        text-decoration: none;">Master of Business Administration - Business Analytics</a></h4>
                     </div>
                   </div>
                   <!-- project number -->
                   <div>
-                    <h1 class="fw-bold">18</h1>
+                    <h1 class="fw-bold">34</h1>
                   </div>
-                  <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#templateOneEdit" data-whatever="@getbootstraptemplateoneEdit"><i data-feather="edit" ></i></a>
-                <a href="adminProgramsDelete.html" class="btn btn-primary"><i data-feather="trash-2" ></i></a>
-                <a href="#" class="btn btn-primary" id='send' data-bs-toggle="modal" data-bs-target="#templateOneSend" data-whatever="@getbootstraptemplateoneSend"><i data-feather="user-plus" ></i></a>
+                  <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#templateOneEdit" data-whatever="@getbootstraptemplateoneEdit"><i data-feather="edit" ></i></a>
+                
+                <a href="#" class="btn btn-light" id='send' data-bs-toggle="modal" data-bs-target="#templateOneSend" data-whatever="@getbootstraptemplateoneSend"><i data-feather="user-plus" ></i></a>
+
+                <a href="adminProgramsDelete.html" class="btn btn-light"><i data-feather="trash-2" ></i></a>
                 </div>
               </div>
             </div>
@@ -349,42 +395,21 @@
                     mb-3">
                     <div>
                       <h4 class="mb-0"> <a href="#"  data-bs-toggle="modal" data-bs-target="#templateOne" data-whatever="@getbootstraptemplateone" style=" color: #0060B6;
-                        text-decoration: none;">MIS</a></h4>
+                        text-decoration: none;">Master of Business Administration - Management</a></h4>
                     </div>
                   </div>
                   <!-- project number -->
                   <div>
-                    <h1 class="fw-bold">180</h1>
+                    <h1 class="fw-bold">67</h1>
                   </div>
-                  <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#templateOneEdit" data-whatever="@getbootstraptemplateoneEdit"><i data-feather="edit" ></i></a>
-                <a href="adminProgramsDelete.html" class="btn btn-primary"><i data-feather="trash-2" ></i></a>
-                <a href="#" class="btn btn-primary" id='send' data-bs-toggle="modal" data-bs-target="#templateOneSend" data-whatever="@getbootstraptemplateoneSend"><i data-feather="user-plus" ></i></a>
+                  <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#templateOneEdit" data-whatever="@getbootstraptemplateoneEdit"><i data-feather="edit" ></i></a>
+               
+                <a href="#" class="btn btn-light" id='send' data-bs-toggle="modal" data-bs-target="#templateOneSend" data-whatever="@getbootstraptemplateoneSend"><i data-feather="user-plus" ></i></a>
+                <a href="adminProgramsDelete.html" class="btn btn-light"><i data-feather="trash-2" ></i></a>
                 </div>
               </div>
             </div>
-            <div class="col-xl-3 col-lg-6 col-md-12 col-12 mt-6" style="margin: 0 70px 0 10px; ">
-              <!-- card -->
-              <div class="card" style="width: 18rem; padding: 10px; ">
-                <!-- card body -->
-                <div class="card-body">
-                  <!-- heading -->
-                  <div class="d-flex justify-content-between align-items-center
-                    mb-3">
-                    <div>
-                      <h4 class="mb-0"> <a href="#"  data-bs-toggle="modal" data-bs-target="#templateOne" data-whatever="@getbootstraptemplateone" style=" color: #0060B6;
-                        text-decoration: none;">ACS</a></h4>
-                    </div>
-                  </div>
-                  <!-- project number -->
-                  <div>
-                    <h1 class="fw-bold">170</h1>
-                  </div>
-                  <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#templateOneEdit" data-whatever="@getbootstraptemplateoneEdit"><i data-feather="edit" ></i></a>
-                <a href="adminProgramsDelete.html" class="btn btn-primary"><i data-feather="trash-2" ></i></a>
-                <a href="#" class="btn btn-primary" id='send' data-bs-toggle="modal" data-bs-target="#templateOneSend" data-whatever="@getbootstraptemplateoneSend"><i data-feather="user-plus" ></i></a>
-                </div>
-              </div>
-            </div>
+ 
     </div>
           
           </div>

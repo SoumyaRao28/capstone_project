@@ -53,47 +53,21 @@
                         <div class="navbar-heading">Manage Coursework</div>
                     </li>
 
-
-                        <!-- Nav item -->
-                        <li class="nav-item">
-                            <a class="nav-link has-arrow @@if (context.page_group !== 'authentication') { collapsed }" href="#!" data-bs-toggle="collapse" data-bs-target="#navAuthentication" aria-expanded="false" aria-controls="navAuthentication">
+                          <!-- Nav item -->
+                          <li class="nav-item">
+                            <a class="nav-link @@if (context.page === 'borders') { active }" href="adminPrograms.html" aria-expanded="false">
                                 <i data-feather="layers" class="nav-icon icon-xs me-2">
-                                </i> Programs
+                                </i>  Programs
                             </a>
-                            <div id="navAuthentication" class="collapse @@if (context.page_group === 'authentication') { show }" data-bs-parent="#sideNavbar">
-                                <ul class="nav flex-column">
-                                    <li class="nav-item">
-                                        <a class="nav-link @@if (context.page === 'signin') { active }" href="adminPrograms.html"> Manage Program</a>
                                     </li>
 
-
-                                </ul>
-                            </div>
-                        </li>
-                           <!-- Nav item -->
-                           <li class="nav-item">
-                            <a class="nav-link has-arrow @@if (context.page_group !== 'courses') { collapsed }" href="#!" data-bs-toggle="collapse" data-bs-target="#navCourses" aria-expanded="false" aria-controls="navCourses">
-                                <i data-feather="book-open" class="nav-icon icon-xs me-2">
-                                </i> Courses
-                            </a>
-                            <div id="navCourses" class="collapse @@if (context.page_group === 'courses') { show }" data-bs-parent="#sideNavbar">
-                                <ul class="nav flex-column">
-                                    <li class="nav-item">
-                                        <a class="nav-link @@if (context.page === 'signin') { active }" href="#"> Add Course</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link @@if (context.page === 'signup') { active } " href="#"> Update Course</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link @@if (context.page === 'forgetpassword') { active }" href="#">
-                                            View Course
-                                </a>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </li>
-                        
+       <!-- Nav item -->
+       <li class="nav-item">
+        <a class="nav-link @@if (context.page === 'borders') { active }" href="adminCourses.html" aria-expanded="false">
+            <i data-feather="book-open" class="nav-icon icon-xs me-2">
+            </i>  Courses
+        </a>
+                </li>
 
                         <!-- Nav item -->
                         <li class="nav-item">
