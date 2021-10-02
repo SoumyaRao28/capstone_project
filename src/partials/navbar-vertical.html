@@ -114,29 +114,10 @@
                       
                         <!-- Nav item -->
                         <li class="nav-item">
-                            <a class="nav-link has-arrow @@if (context.page_group !== 'Student') { collapsed }" href="#!" data-bs-toggle="collapse" data-bs-target="#navStudent" aria-expanded="false" aria-controls="navStudent">
+                            <a class="nav-link @@if (context.page === 'borders') { active }" href="adminStudent.html" aria-expanded="false">
                                 <i data-feather="user" class="nav-icon icon-xs me-2" >
                             </i> Student
                             </a>
-                            <div id="navStudent" class="collapse @@if (context.page_group === 'Student') { show }" data-bs-parent="#sideNavbar">
-                                <ul class="nav flex-column">
-                                    <li class="nav-item">
-                                        <a class="nav-link @@if (context.page === 'typography') { active }" href="#" aria-expanded="false">
-                                            Add Students
-                                        </a>
-                                    </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link @@if (context.page === 'borders') { active }" href="#" aria-expanded="false">
-                                                Update Student
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                        <a class="nav-link @@if (context.page === 'colors') { active }" href="#" aria-expanded="false">
-                                            View Students
-                                        </a>
-                                    </li>
-                                    </ul>
-                                    </div>
                                     </li>
 
                   <!-- Nav item -->

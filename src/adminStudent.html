@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    @@include("partials/head.html")
+    <title>Dashboard | Online Program Student Schedule</title>
+  </head>
+
+  <body>
+    <div id="db-wrapper">
+      <!-- navbar vertical -->
+      @@include('partials/navbar-vertical.html', {
+      "page": "dashboard",
+
+      })
+       <!-- Page content -->
+      <div id="page-content">
+        @@include("partials/header.html")
+        <!-- Container fluid -->
+        <div class="bg-primary pt-10 pb-21" style="background-color:black"></div>
+        <div class="container-fluid mt-n22 px-6" >
+          <div class="row" >
+            <div class="col-lg-12 col-md-12 col-12">
+                <!-- Page header -->
+                <div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="mb-2 mb-lg-0">
+                      <h3 class="mb-0 fw-bold text-white">Manage Student</h3>
+                    </div>
+                    <div>
+                      <a href="#"><button type="button" class="btn btn-white" data-bs-toggle="modal" data-bs-target="#exampleModal" data-whatever="@getbootstrap">Add Student</button></a>
+                      <a href="#"><button type="button" class="btn btn-white" data-bs-toggle="modal" data-bs-target="#templateOneEdit" data-whatever="@getbootstraptemplateoneEdit">Upload</button></a>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelOne" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabelOne">Add Student
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">School Email:</label>
+                            <input type="text" class="form-control" placeholder="s538311@nwmissouri.edu" id="recipient-name">
+                          </div>
+                          <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a href="newAdmin.html" ><button type="button" class="btn btn-primary" >Save</button> </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="templateOneLabelTwoSend">Student Detail
+                          </h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+        
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <form>
+                            <div class="mb-3">
+                              <label for="message-text" class="col-form-label">Select Program:</label>
+                              <select class="form-select" multiple aria-label="multiple select example">
+                                <option selected>-----Select One/More Program-----</option>
+                                <option value="1">Master of Business Administration - General Management</option>
+                                <option value="2">Master of Business Administration - Human Resource</option>
+                                <option value="3">Master of Business Administration - Marketing</option>
+                                <option value="4">Master of Business Administration - Business Analytics</option>
+                                <option value="5">Master of Business Administration - Management</option>
+                              </select>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <p>
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                              Clone
+                            </a>
+                          </p>
+                          <div class="collapse" id="collapseExample">
+                            <div class="card card-body">
+                             <a>Course has been Cloned <i data-feather="check-circle"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal fade" id="templateOneEdit" tabindex="-1" role="dialog" aria-labelledby="templateOneEditLabelOne" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="templateOneEditLabelOne">Upload
+                          </h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+        
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <form>
+                            <div class="mb-3">
+                             <!-- actual upload which is hidden -->
+                            <input type="file" id="actual-btn" accept=".xlsx, .xls, .csv" hidden/>
+
+                            <!-- our custom upload button -->
+                            <label for="actual-btn" class="labeld">Choose File</label>
+
+                            <!-- name of file chosen -->
+                            <span id="file-chosen">No file chosen</span>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <a href="adminCoursesEdit.html" ><button type="button" class="btn btn-primary" >Upload</button> </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <!-- row  -->
+          <div class="row mt-6">
+            <div class="col-md-12 col-12">
+              <!-- card  -->
+              <div class="card">
+                <!-- table  -->
+  <div class="row">
+      <div class="col-md-12">
+          <div class="card">
+              <div class="card-body">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default"><i data-feather="search" ></i></span>
+                    <input type="text" class="w-25 p-2" style="border:1px solid grey; border-radius: 5px;" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+
+                    <div  style="display: flex; flex-direction: row; margin-left:10rem;" >
+                          <div class="dropdown" >
+                            <select class="btn btn-info dropdown-toggle"  type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <option>Select Term</option>
+                            <option>Fall</option>
+                            <option>Summer</option>
+                            <option>Spring</option>
+                            </select>
+                            </div>
+                          <div class="dropdown" style="margin-left:2rem;" >
+                              <select class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <option>Select Block</option>
+                              <option>1</option>
+                              <option>2</option>
+                              </select>
+                            </div>
+                          <div class="dropdown" style="margin-left:2rem;">
+                          <select class="btn btn-info dropdown-toggle" id='date-dropdown'>
+                          </select>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="table-responsive">
+                  <table class="table no-wrap user-table mb-0">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="border-0 text-uppercase font-medium">Name</th>
+                        <th scope="col" class="border-0 text-uppercase font-medium">919#</th>
+                        <th scope="col" class="border-0 text-uppercase font-medium">Start Term</th>
+                        <th scope="col" class="border-0 text-uppercase font-medium">Category</th>
+                        <th scope="col" class="border-0 text-uppercase font-medium">Welcome Sent</th>
+                        <th scope="col" class="border-0 text-uppercase font-medium">Schedule Sent</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                           <a  data-bs-toggle="modal" data-bs-target="#exampleModalScrollable" data-whatever="@getbootstraptemplateoneSend" ><h5 class="font-medium mb-0">Daniel Kristeen</h5> </a> 
+                        </td>
+                        <td>
+                            <h5 class="font-medium mb-0">919919919</h5>
+
+                        </td>
+                        <td>
+                            <h5 class="font-medium mb-0">Spring-1-2021</h5>
+                        </td>
+                        <td>
+                            <span class="badge rounded-pill bg-primary">Standard</span>
+                        </td>
+                        <td style="align-items: center;">
+                                <i data-feather="x-circle" class="btn-circle-disable" ></i>
+                        </td>
+                        <td>
+                            <i data-feather="check-circle" class="btn-circle-enable"  ></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                           <a  data-bs-toggle="modal" data-bs-target="#exampleModalScrollable" data-whatever="@getbootstraptemplateoneSend" ><h5 class="font-medium mb-0">Harry Kristeen</h5> </a> 
+                        </td>
+                        <td>
+                            <h5 class="font-medium mb-0">9193419919</h5>
+
+                        </td>
+                        <td>
+                            <h5 class="font-medium mb-0">Spring-2-2021</h5>
+                        </td>
+                        <td>
+                            <span class="badge rounded-pill bg-warning">Expedited</span>
+                        </td>
+                        <td style="align-items: center;">
+                            <i data-feather="check-circle" class="btn-circle-enable"  ></i>
+                        </td>
+                        <td>
+                            <i data-feather="x-circle" class="btn-circle-disable" ></i>
+
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </div>
+          </div>
+      </div>
+  </div>
+            </div>
+          </div>
+          <!-- row  -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    @@include("partials/scripts.html")
+    <script>
+        const actualBtn = document.getElementById('actual-btn');
+
+const fileChosen = document.getElementById('file-chosen');
+
+actualBtn.addEventListener('change', function(){
+  fileChosen.textContent = this.files[0].name
+})
+
+        let dateDropdown = document.getElementById('date-dropdown'); 
+             
+        let currentYear = (new Date().getFullYear())+3;    
+        let earliestYear = 2000;     
+        while (currentYear >= earliestYear) {      
+          let dateOption = document.createElement('option');          
+          dateOption.text = currentYear;      
+          dateOption.value = currentYear;        
+          dateDropdown.add(dateOption);      
+          currentYear -= 1;    
+        }
+
+        let dateDropdown2 = document.getElementById('date-dropdown2'); 
+             
+        let currentYear2 = (new Date().getFullYear());    
+        let earliestYear2 = 2000;     
+        while (currentYear2 >= earliestYear2) {      
+          let dateOption2 = document.createElement('option');          
+          dateOption2.text = currentYear2;      
+          dateOption2.value = currentYear2;        
+          dateDropdown2.add(dateOption2);      
+          currentYear2 -= 1;    
+        }
+
+        let dateDropdown3 = document.getElementById('date-dropdown3'); 
+             
+        let currentYear3 = (new Date().getFullYear())+3;    
+        let earliestYear3 = 2000;     
+        while (currentYear3 >= earliestYear3) {      
+          let dateOption3 = document.createElement('option');          
+          dateOption3.text = currentYear3;      
+          dateOption3.value = currentYear3;        
+          dateDropdown3.add(dateOption3);      
+          currentYear3 -= 1;    
+        }
+
+        let dateDropdown4 = document.getElementById('date-dropdown4'); 
+             
+        let currentYear4 = (new Date().getFullYear())+3;    
+        let earliestYear4 = 2000;     
+        while (currentYear4 >= earliestYear4) {      
+          let dateOption4 = document.createElement('option');          
+          dateOption4.text = currentYear4;      
+          dateOption4.value = currentYear4;        
+          dateDropdown4.add(dateOption4);      
+          currentYear4 -= 1;    
+        }
+    </script>
+    
+      <style type="text/css">
+        .labeld {
+            background-color: indigo;
+            color: white;
+            padding: 0.5rem;
+            font-family: sans-serif;
+            border-radius: 0.3rem;
+            cursor: pointer;
+            margin-top: 1rem;
+          }
+          
+          #file-chosen{
+            margin-left: 0.3rem;
+            font-family: sans-serif;
+          }
+
+        .btn-circle.btn-lg, .btn-group-lg>.btn-circle.btn {
+          width: 50px;
+          height: 50px;
+          font-size: 18px;
+          line-height: 23px;
+      }
+
+      [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+        cursor: pointer;
+    }
+
+   .enable{
+    width: 24px;
+  }
+  .btn-circle-disable{
+    color: rgb(226, 36, 36);
+  }
+  .btn-circle-enable{
+    color: green;
+  }
+      </style>
+
+
+
+  </body>
+
+</html>
