@@ -5002,7 +5002,9 @@ textarea.form-control-lg {
       border-bottom-left-radius: 0.375rem; }
 
 .accordion-body {
-  padding: 1rem 1.25rem; }
+  padding: 1rem 1.25rem; 
+  background-color: white;
+}
 
 .accordion-flush .accordion-collapse {
   border-width: 0; }

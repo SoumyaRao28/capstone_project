@@ -81,29 +81,10 @@
 
                             <!-- Nav item -->
                             <li class="nav-item">
-                                <a class="nav-link has-arrow @@if (context.page_group !== 'utilities') { collapsed }" href="#!" data-bs-toggle="collapse" data-bs-target="#navUtilities" aria-expanded="false" aria-controls="navUtilities">
+                                <a class="nav-link @@if (context.page === 'borders') { active }" href="adminCarousel.html" aria-expanded="false">
                                     <i data-feather="bookmark" class="nav-icon icon-xs me-2" >
                                 </i> Carousel
                                 </a>
-                                <div id="navUtilities" class="collapse @@if (context.page_group === 'utilities') { show }" data-bs-parent="#sideNavbar">
-                                    <ul class="nav flex-column">
-                                        <li class="nav-item">
-                                            <a class="nav-link @@if (context.page === 'typography') { active }" href="#" aria-expanded="false">
-                                                  Add Carousel
-                                            </a>
-                                        </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link @@if (context.page === 'borders') { active }" href="#" aria-expanded="false">
-                                                     Update Carousel
-                                                </a>
-                                            </li>
-                                            <li class="nav-item">
-                                              <a class="nav-link @@if (context.page === 'colors') { active }" href="#" aria-expanded="false">
-                                                 View Carousel
-                                              </a>
-                                          </li>
-                                        </ul>
-                                        </div>
                                         </li>
                         
                                          <!-- Nav item -->
