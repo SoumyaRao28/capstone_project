@@ -315,17 +315,17 @@ chart.render();
 
 //bar 2
 const labels = [
-  'IS',
-  'CS',
-  'IT',
-  'DA',
-  'Education',
+  'Gen.',
+  'HR',
+  'Marketing',
+  'BA',
+  'Mgmt',
 
 ];
 const data = {
   labels: labels,
   datasets: [{
-    label: 'School Of CS/IS v/s Email Sent',
+    label: 'Sch. Of Business Ed v/s Email Sent',
     backgroundColor: [
       'rgba(255, 99, 132, 0.2)',
       'rgba(255, 159, 64, 0.2)',
