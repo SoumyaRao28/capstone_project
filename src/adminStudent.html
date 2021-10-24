@@ -17,12 +17,12 @@
       <div id="page-content">
         @@include("partials/header.html")
         <!-- Container fluid -->
-        <div class="bg-primary pt-10 pb-21" style="background-color:black"></div>
+        <div class="bg-primary pt-10 pb-15" style="background-color:black"></div>
         <div class="container-fluid mt-n22 px-6" >
           <div class="row" >
             <div class="col-lg-12 col-md-12 col-12">
                 <!-- Page header -->
-                <div>
+                <div style="height: 20px;">
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="mb-2 mb-lg-0">
                       <h3 class="mb-0 fw-bold text-white">Manage Student</h3>
@@ -74,30 +74,101 @@
                           </button>
                         </div>
                         <div class="modal-body">
-                          <form>
-                            <div class="mb-3">
-                              <label for="message-text" class="col-form-label">Select Program:</label>
-                              <select class="form-select" multiple aria-label="multiple select example">
-                                <option selected>-----Select One/More Program-----</option>
-                                <option value="1">Master of Business Administration - General Management</option>
-                                <option value="2">Master of Business Administration - Human Resource</option>
-                                <option value="3">Master of Business Administration - Marketing</option>
-                                <option value="4">Master of Business Administration - Business Analytics</option>
-                                <option value="5">Master of Business Administration - Management</option>
-                              </select>
-                            </div>
-                          </form>
+                          <span class="badge rounded-pill bg-primary" >Standard</span>
+                          <span class="badge rounded-pill bg-secondary">Expedited</span>
+                          <main class="container__main1">
+                            <div>
+                              <header class="header2">
+                                <div class="table-responsive">
+                                  <table class="table no-wrap user-table mb-0">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col" class="border-0 text-uppercase font-medium" ></th>
+                                        <th scope="col" class="border-0 text-uppercase font-medium" >Courses</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td >
+                                           <h5 class="font-medium mb-0">Standard</h5>
+                                        </td>
+                                        <td >
+                                          <span class="badge rounded-pill bg-warning">Big Data</span>
+                                          <span class="badge rounded-pill bg-warning">Java</span>
+                                        </td>
+                                      </tr>
+                                      
+                                    </tbody>
+                                  </table>
+                              </div>
+                              </header>
+                              <main>
+                                <main class="">
+                                  <div class="table-responsive">
+                                    <table class="table no-wrap user-table mb-0">
+                                      <thead>
+                                        <tr>
+                                          <th scope="col" class="border-0 text-uppercase font-medium" class="container__left2">Courses</th>
+                                          <th scope="col" class="border-0 text-uppercase font-medium" class="container__middle2">Standard</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td class="container__left2">
+                                              <h5 class="font-medium mb-0">Big Data</h5>
+                                          </td>
+                                          <td class="container__middle2" >
+                                            <label class="switch">
+                                              <input type="checkbox" checked>
+                                              <span class="slider round"></span>
+                                            </label>
+                                          </td>
+                                       
+                                         
+                                        </tr>
+                                        <tr>
+                                          <td class="container__left2">
+                                              <h5 class="font-medium mb-0">Java</h5>
+                                          </td>
+                                          <td class="container__middle2" >
+                                            <label class="switch">
+                                              <input type="checkbox" checked>
+                                              <span class="slider round"></span>
+                                            </label>
+                                          </td>
+                                        
+                                        </tr>
+                                        <tr>
+                                          <td class="container__left2">
+                                              <h5 class="font-medium mb-0">Project Management</h5>
+                                          </td>
+                                          <td class="container__middle2" >
+                                            <label class="switch">
+                                              <input type="checkbox" >
+                                              <span class="slider round"></span>
+                                            </label>
+                                          </td>
+                                         
+                                        </tr>
+                                        
+                                      </tbody>
+                                    </table>
+                                </div>
+                              </main>
+                              </main>
+                          </div>
+                          </main>
                         </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                           <p>
                             <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                              Clone
+                              Save
                             </a>
                           </p>
                           <div class="collapse" id="collapseExample">
                             <div class="card card-body">
-                             <a>Course has been Cloned <i data-feather="check-circle"></i></a>
+                             <a>Student Updated <i data-feather="check-circle"></i></a>
                             </div>
                           </div>
                         </div>
@@ -131,6 +202,110 @@
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                           <a href="adminCoursesEdit.html" ><button type="button" class="btn btn-primary" >Upload</button> </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal fade" id="templateOneExpedited" tabindex="-1" role="dialog" aria-labelledby="templateOneExpeditedLabelOne" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="templateOneExpeditedLabelOne">Details
+                          </h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+        
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <span class="badge rounded-pill bg-secondary" >Standard</span>
+                          <span class="badge rounded-pill bg-warning">Expedited</span>
+                          <main class="container__main1">
+                            <div>
+                              <header class="header2">
+                                <div class="table-responsive">
+                                  <table class="table no-wrap user-table mb-0">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col" class="border-0 text-uppercase font-medium" ></th>
+                                        <th scope="col" class="border-0 text-uppercase font-medium" >Courses</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td >
+                                           <h5 class="font-medium mb-0">Expedited</h5>
+                                        </td>
+                                        <td >
+                                          <span class="badge rounded-pill bg-warning">Big Data</span>
+                                          <span class="badge rounded-pill bg-warning">Java</span>
+                                        </td>
+                                      </tr>
+                                      
+                                    </tbody>
+                                  </table>
+                              </div>
+                              </header>
+                              <main>
+                                <main class="">
+                                  <div class="table-responsive">
+                                    <table class="table no-wrap user-table mb-0">
+                                      <thead>
+                                        <tr>
+                                          <th scope="col" class="border-0 text-uppercase font-medium" class="container__left2">Courses</th>
+                                          <th scope="col" class="border-0 text-uppercase font-medium" class="container__middle2">Expedited</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td class="container__left2">
+                                              <h5 class="font-medium mb-0">Big Data</h5>
+                                          </td>
+                                          <td class="container__middle2" >
+                                            <label class="switch">
+                                              <input type="checkbox" checked>
+                                              <span class="slider round"></span>
+                                            </label>
+                                          </td>
+                                       
+                                         
+                                        </tr>
+                                        <tr>
+                                          <td class="container__left2">
+                                              <h5 class="font-medium mb-0">Java</h5>
+                                          </td>
+                                          <td class="container__middle2" >
+                                            <label class="switch">
+                                              <input type="checkbox" checked>
+                                              <span class="slider round"></span>
+                                            </label>
+                                          </td>
+                                        
+                                        </tr>
+                                        <tr>
+                                          <td class="container__left2">
+                                              <h5 class="font-medium mb-0">Project Management</h5>
+                                          </td>
+                                          <td class="container__middle2" >
+                                            <label class="switch">
+                                              <input type="checkbox" >
+                                              <span class="slider round"></span>
+                                            </label>
+                                          </td>
+                                         
+                                        </tr>
+                                        
+                                      </tbody>
+                                    </table>
+                                </div>
+                              </main>
+                              </main>
+                          </div>
+                          </main>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <a href="#" ><button type="button" class="btn btn-primary" >Save</button> </a>
                         </div>
                       </div>
                     </div>
@@ -211,7 +386,7 @@
                       </tr>
                       <tr>
                         <td>
-                           <a  data-bs-toggle="modal" data-bs-target="#exampleModalScrollable" data-whatever="@getbootstraptemplateoneSend" ><h5 class="font-medium mb-0">Harry Kristeen</h5> </a> 
+                           <a  data-bs-toggle="modal" data-bs-target="#templateOneExpedited" data-whatever="@getbootstraptemplateOneExpedited" ><h5 class="font-medium mb-0">Harry Kristeen</h5> </a> 
                         </td>
                         <td>
                             <h5 class="font-medium mb-0">9193419919</h5>

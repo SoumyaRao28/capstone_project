@@ -78,7 +78,7 @@
           </div>
           
           <div class="modal fade" id="templateOne" tabindex="-1" role="dialog" aria-labelledby="templateOneLabelOne" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
                   <h5 class="modal-title" id="templateOneLabelOne">Welcome Letter Template
@@ -88,18 +88,22 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  <img src="/src/assets/images/email/header.png" alt="Girl in a jacket"  height="250" width="760">
-                  <input type="text" class="form-control" id="recipient-name" value="Welcome Letter Template" disabled>
-                  <br>
-                  <textarea class="form-control" id="message-text" placeholder="With supporting text below as a natural lead-in to additional content." disabled></textarea>
-                  <br>
-                  <img src="/src/assets/images/email/footer.png" alt="Girl in a jacket"  height="250" width="760">
+                  <form>
+                    <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label">Title:</label>
+                      <input type="text" class="form-control" id="recipient-name" value="Welcome Letter Template" disabled>
+                    </div>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label">Message:</label>
+                      <textarea class="form-control" id="message-text" placeholder="With supporting text below as a natural lead-in to additional content." disabled></textarea>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
           </div>
           <div class="modal fade" id="templateOneEdit" tabindex="-1" role="dialog" aria-labelledby="templateOneEditLabelOne" aria-hidden="true">
-            <div class="modal-dialog  modal-lg" role="document">
+            <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
                   <h5 class="modal-title" id="templateOneEditLabelOne">Welcome Letter Template
@@ -109,12 +113,16 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  <img src="/src/assets/images/email/header.png" alt="Girl in a jacket"  height="250" width="760">
-                  <input type="text" class="form-control" id="recipient-name" value="Welcome Letter Template" >
-                  <br>
-                  <textarea class="form-control" id="message-text" placeholder="With supporting text below as a natural lead-in to additional content." ></textarea>
-                  <br>
-                  <img src="/src/assets/images/email/footer.png" alt="Girl in a jacket"  height="250" width="760">
+                  <form>
+                    <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label">Title:</label>
+                      <input type="text" class="form-control" id="recipient-name" value="Welcome Letter Template" >
+                    </div>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label">Message:</label>
+                      <textarea class="form-control" id="message-text" placeholder="With supporting text below as a natural lead-in to additional content." ></textarea>
+                    </div>
+                  </form>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -148,14 +156,7 @@
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                    Send
-                  </a>
-                  <div class="collapse" id="collapseExample">
-                    <div class="card card-body">
-                     <a>Email Sent <i data-feather="check-circle"></i></a>
-                    </div>
-                  </div>
+                  <a href="#" ><button type="button" class="btn btn-primary" >Send</button> </a>
                 </div>
               </div>
             </div>
@@ -246,7 +247,6 @@
           </div>
           <div class="row mt-6">
             <div class="col-md-12 col-12">
-              
               <!-- card  -->
               <div class="card" style="display: flex; flex-direction: column; padding:20px;">
                 <div class="input-group mb-3">
@@ -254,20 +254,7 @@
                   <input type="text" class="w-25 p-2" style="border:1px solid grey; border-radius: 5px;" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                 </div>
                 <div style="display: flex; flex-direction: row; ">
-                <div class="col-xl-3 col-lg-6 col-md-12 col-12 mt-6" style="margin: 0 70px 0 10px; ">
-                  
-              <div class="card" style="width: 20rem; padding: 10px; ">
-                <div class="card-body">
-                  <input type="radio"  name="btnradio" id="btnradio2" autocomplete="off" style="height:15px; width:15px;">
-                  <h5 class="card-title">  <a href="#"  data-bs-toggle="modal" data-bs-target="#templateOne" data-whatever="@getbootstraptemplateone">Welcome letter Template</a></h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#templateOneEdit" data-whatever="@getbootstraptemplateoneEdit">Edit</a>
-                  <a href="adminEmailDelete.html" class="btn btn-primary" >Delete</a>
-                  <a href="#" class="btn btn-primary" id='send' data-bs-toggle="modal" data-bs-target="#templateOneSend" data-whatever="@getbootstraptemplateoneSend">Send</a>
-
-                </div>
-            </div>
-          </div>
+              
           <div class="col-xl-3 col-lg-6 col-md-12 col-12 mt-6" style="margin: 0 70px 0 10px; ">
               <div class="card" style="width: 20rem; padding: 10px;">
                 <div class="card-body">
