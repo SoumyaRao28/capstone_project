@@ -124,7 +124,7 @@
             </div>
           </div>
           <div class="modal fade" id="templateOneSend" tabindex="-1" role="dialog" aria-labelledby="templateOneSendLabelOne" aria-hidden="true">
-            <div class="modal-dialog" role="document">
+            <div class="modal-dialog modal-xl" role="document">
               <div class="modal-content">
                 <div class="modal-header">
                   <h5 class="modal-title" id="templateOneLabelTwoSend">Send Email
@@ -134,30 +134,144 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  <form>
-                    <div class="mb-3">
-                      <label for="message-text" class="col-form-label">Select Program:</label>
-                      <select class="form-select" multiple aria-label="multiple select example">
-                        <option selected>Select a Program</option>
-                        <option value="1">Master of Business Administration - General Management</option>
-                        <option value="2">Master of Business Administration - Human Resource</option>
-                        <option value="3">Master of Business Administration - Marketing</option>
-                        <option value="4">Master of Business Administration - Business Analytics</option>
-                        <option value="5">Master of Business Administration - Management</option>
-                      </select>
-                    </div>
-                  </form>
+                  
+                  <div class="table-responsive">
+                    <table class="table no-wrap user-table mb-0">
+                      <thead>
+                        <tr>
+                          <th scope="col" class="border-0 text-uppercase font-medium" >
+                            Program Name
+                          </th>
+                          <th scope="col" class="border-0 text-uppercase font-medium" >Email Sent</th>
+                          <th scope="col" class="border-0 text-uppercase font-medium" >Email Pending</th>
+
+                          <th scope="col" class="border-0 text-uppercase font-medium" ></th>
+
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td >
+                             <h5 class="font-medium mb-0">Master of Business Administration - General Management</h5>
+                          </td>
+                          <td >
+                            <span class="badge rounded-pill bg-success">124</span>
+                          </td>
+                          <td >
+                            <span class="badge rounded-pill bg-danger">23</span>
+                          </td>
+                          <td >
+                            <p>
+                              <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                Send Pending Emails
+                              </a>
+                            </p>
+                            <div class="collapse" id="collapseExample1">
+                              <div class="card card-body">
+                               <a>Email Sent<i data-feather="check-circle"></i></a>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td >
+                             <h5 class="font-medium mb-0">Master of Business Administration - Human Resource</h5>
+                          </td>
+                          <td >
+                            <span class="badge rounded-pill bg-success">124</span>
+                          </td>
+                          <td >
+                            <span class="badge rounded-pill bg-danger">23</span>
+                          </td>
+                          <td >
+                            <p>
+                              <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                Send Pending Emails
+                              </a>
+                            </p>
+                            <div class="collapse" id="collapseExample2">
+                              <div class="card card-body">
+                               <a>Email Sent<i data-feather="check-circle"></i></a>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td >
+                             <h5 class="font-medium mb-0">Master of Business Administration - Marketing</h5>
+                          </td>
+                          <td >
+                            <span class="badge rounded-pill bg-success">124</span>
+                          </td>
+                          <td >
+                            <span class="badge rounded-pill bg-danger">23</span>
+                          </td>
+                          <td >
+                            <p>
+                              <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                Send Pending Emails
+                              </a>
+                            </p>
+                            <div class="collapse" id="collapseExample3">
+                              <div class="card card-body">
+                               <a>Email Sent<i data-feather="check-circle"></i></a>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td >
+                             <h5 class="font-medium mb-0">Master of Business Administration - Business Analytics</h5>
+                          </td>
+                          <td >
+                            <span class="badge rounded-pill bg-success">124</span>
+                          </td>
+                          <td >
+                            <span class="badge rounded-pill bg-danger">23</span>
+                          </td>
+                          <td >
+                            <p>
+                              <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                Send Pending Emails
+                              </a>
+                            </p>
+                            <div class="collapse" id="collapseExample4">
+                              <div class="card card-body">
+                               <a>Email Sent<i data-feather="check-circle"></i></a>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td >
+                             <h5 class="font-medium mb-0">Master of Business Administration - Management</h5>
+                          </td>
+                          <td >
+                            <span class="badge rounded-pill bg-success">124</span>
+                          </td>
+                          <td >
+                            <span class="badge rounded-pill bg-danger">23</span>
+                          </td>
+                          <td >
+                            <p>
+                              <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                Send Pending Emails
+                              </a>
+                            </p>
+                            <div class="collapse" id="collapseExample5">
+                              <div class="card card-body">
+                               <a>Email Sent<i data-feather="check-circle"></i></a>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                    Send
-                  </a>
-                  <div class="collapse" id="collapseExample">
-                    <div class="card card-body">
-                     <a>Email Sent <i data-feather="check-circle"></i></a>
-                    </div>
-                  </div>
+                  
                 </div>
               </div>
             </div>
