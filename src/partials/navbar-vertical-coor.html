@@ -8,7 +8,7 @@
         <!-- Navbar nav -->
         <ul class="navbar-nav flex-column" id="sideNavbar">
             <li class="nav-item">
-                <a class="nav-link has-arrow @@if (context.page ===  'dashboard') { active }" href="@@webRoot/index.html">
+                <a class="nav-link has-arrow @@if (context.page ===  'dashboard') { active }" href="@@webRoot/dashboard-coordinator.html">
                     <i data-feather="home" class="nav-icon icon-xs me-2"></i>  Dashboard
                 </a>
 
@@ -25,21 +25,11 @@
 
                         <!-- Nav item -->
                         <li class="nav-item">
-                            <a class="nav-link has-arrow @@if (context.page_group !== 'authentication') { collapsed }" href="#!" data-bs-toggle="collapse" data-bs-target="#navAuthentication" aria-expanded="false" aria-controls="navAuthentication">
+                            <a class="nav-link @@if (context.page === 'borders') { active }" href="coorPrograms.html" aria-expanded="false">
                                 <i data-feather="layers" class="nav-icon icon-xs me-2">
-                                </i> Programs
+                                </i>  Programs
                             </a>
-                            <div id="navAuthentication" class="collapse @@if (context.page_group === 'authentication') { show }" data-bs-parent="#sideNavbar">
-                                <ul class="nav flex-column">
-                                    <li class="nav-item">
-                                        <a class="nav-link @@if (context.page === 'forgetpassword') { active }" href="#">
-                                            View Programs
-                                </a>
                                     </li>
-
-                                </ul>
-                            </div>
-                        </li>
                            <!-- Nav item -->
                            <li class="nav-item">
                             <a class="nav-link has-arrow @@if (context.page_group !== 'courses') { collapsed }" href="#!" data-bs-toggle="collapse" data-bs-target="#navCourses" aria-expanded="false" aria-controls="navCourses">

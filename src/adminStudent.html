@@ -28,6 +28,7 @@
                       <h3 class="mb-0 fw-bold text-white">Manage Student</h3>
                     </div>
                     <div>
+                      <a href="#" style="margin-right:2rem;"><button type="button" class="btn btn-white" data-bs-toggle="modal" data-bs-target="#templateOneEdit2" data-whatever="@getbootstraptemplateoneEdit2">Add Schedule</button></a>
                       <a href="#"><button type="button" class="btn btn-white" data-bs-toggle="modal" data-bs-target="#exampleModal" data-whatever="@getbootstrap">Add Student</button></a>
                       <a href="#"><button type="button" class="btn btn-white" data-bs-toggle="modal" data-bs-target="#templateOneEdit" data-whatever="@getbootstraptemplateoneEdit">Upload</button></a>
                     </div>
@@ -83,7 +84,7 @@
                                    <h5 class="font-medium mb-0">Name</h5>
                                 </td>
                                 <td >
-                                  <h5 class="font-medium mb-0" >Olivia Mal</h5>
+                                  <input type="text" class="form-control" placeholder="Olivia Mal" id="recipient-name">
                                 </td>
                               </tr>
                             
@@ -92,7 +93,7 @@
                                    <h5 class="font-medium mb-0">919#</h5>
                                 </td>
                                 <td >
-                                  <h5 class="font-medium mb-0" >919589548</h5>
+                                  <input type="text" class="form-control" placeholder="919589548" id="recipient-name">
                                 </td>
                               </tr>
                               <tr>
@@ -100,7 +101,8 @@
                                    <h5 class="font-medium mb-0">Email</h5>
                                 </td>
                                 <td >
-                                  <h5 class="font-medium mb-0" >S548750@nwmissouri.edu</h5>
+                                  <input type="text" class="form-control" placeholder="S548750@nwmissouri.edu" id="recipient-name">
+
                                 </td>
                               </tr>
                               <tr>
@@ -108,8 +110,13 @@
                                                                 <h5 class="font-medium mb-0" >Category</h5>
                                                               </td>
                                                                 <td>
-                                                                  <span class="badge rounded-pill bg-primary" >Standard</span>
-                                                                  <span class="badge rounded-pill bg-secondary">Expedited</span></td>
+                                                                  <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                                                                    <label class="btn btn-outline-success" for="btnradio1">Standard</label>
+                                
+                                                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                                                                    <label class="btn btn-outline-warning" for="btnradio2">Expedited</label>
+                                                                  </div>
                                                               </tr>
                              
                             </tbody>
@@ -125,6 +132,201 @@
                                     <thead>
                                       <tr>
                                         <th scope="col" class="border-0 text-uppercase font-medium" >Current Term Details</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td><h5 h5 class="font-medium mb-0">Term</h5></td>
+                                        <td><h5 h5 class="font-medium mb-0">Spring-2-2021</h5></td>
+                                      </tr>
+                                      
+                                      
+                                    </tbody>
+                                  </table>
+                              </div>
+                              </header>
+                              <main>
+                                <main class="">
+                                  <div class="table-responsive">
+                                    <table class="table no-wrap user-table mb-0">
+                                      <thead>
+                                        <tr>
+                                          <th scope="col" class="border-0 text-uppercase font-medium" class="container__left2">Courses</th>
+                                          <th scope="col" class="border-0 text-uppercase font-medium" class="container__middle2">Standard</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td class="container__left2">
+                                              <h5 class="font-medium mb-0">Financial Management</h5>
+                                          </td>
+                                          <td class="container__middle2" >
+                                            <label class="switch">
+                                              <input type="checkbox" checked>
+                                              <span class="slider round"></span>
+                                            </label>
+                                          </td>
+                                       
+                                         
+                                        </tr>
+                                        <tr>
+                                          <td class="container__left2">
+                                              <h5 class="font-medium mb-0">Employment Law</h5>
+                                          </td>
+                                          <td class="container__middle2" >
+                                            <label class="switch">
+                                              <input type="checkbox">
+                                              <span class="slider round"></span>
+                                            </label>
+                                          </td>
+                                        
+                                        </tr>
+                                        
+                                      </tbody>
+                                    </table>
+                                </div>
+                              </main>
+                              </main>
+                          </div>
+                          </main>
+                          <main class="container__main1">
+                            <div>
+                              <header class="header2">
+                                <div class="table-responsive">
+                                  <table class="table no-wrap user-table mb-0">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col" class="border-0 text-uppercase font-medium" ></th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td><h5 h5 class="font-medium mb-0">Term</h5></td>
+                                        <td><h5 h5 class="font-medium mb-0">Spring-2-2021</h5></td>
+                                      </tr>
+                                      
+                                      
+                                    </tbody>
+                                  </table>
+                              </div>
+                              </header>
+                              <main>
+                                <main class="">
+                                  <div class="table-responsive">
+                                    <table class="table no-wrap user-table mb-0">
+                                      <thead>
+                                        <tr>
+                                          <th scope="col" class="border-0 text-uppercase font-medium" class="container__left2">Courses</th>
+                                          <th scope="col" class="border-0 text-uppercase font-medium" class="container__middle2">Standard</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td class="container__left2">
+                                              <h5 class="font-medium mb-0">Financial Management</h5>
+                                          </td>
+                                          <td class="container__middle2" >
+                                            <label class="switch">
+                                              <input type="checkbox" checked>
+                                              <span class="slider round"></span>
+                                            </label>
+                                          </td>
+                                       
+                                         
+                                        </tr>
+                                        <tr>
+                                          <td class="container__left2">
+                                              <h5 class="font-medium mb-0">Employment Law</h5>
+                                          </td>
+                                          <td class="container__middle2" >
+                                            <label class="switch">
+                                              <input type="checkbox">
+                                              <span class="slider round"></span>
+                                            </label>
+                                          </td>
+                                        
+                                        </tr>
+                                        
+                                      </tbody>
+                                    </table>
+                                </div>
+                              </main>
+                              </main>
+                          </div>
+                          </main>
+                          <main class="container__main1">
+                            <div>
+                              <header class="header2">
+                                <div class="table-responsive">
+                                  <table class="table no-wrap user-table mb-0">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col" class="border-0 text-uppercase font-medium" ></th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td><h5 h5 class="font-medium mb-0">Term</h5></td>
+                                        <td><h5 h5 class="font-medium mb-0">Spring-2-2021</h5></td>
+                                      </tr>
+                                      
+                                      
+                                    </tbody>
+                                  </table>
+                              </div>
+                              </header>
+                              <main>
+                                <main class="">
+                                  <div class="table-responsive">
+                                    <table class="table no-wrap user-table mb-0">
+                                      <thead>
+                                        <tr>
+                                          <th scope="col" class="border-0 text-uppercase font-medium" class="container__left2">Courses</th>
+                                          <th scope="col" class="border-0 text-uppercase font-medium" class="container__middle2">Standard</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td class="container__left2">
+                                              <h5 class="font-medium mb-0">Financial Management</h5>
+                                          </td>
+                                          <td class="container__middle2" >
+                                            <label class="switch">
+                                              <input type="checkbox" checked>
+                                              <span class="slider round"></span>
+                                            </label>
+                                          </td>
+                                       
+                                         
+                                        </tr>
+                                        <tr>
+                                          <td class="container__left2">
+                                              <h5 class="font-medium mb-0">Employment Law</h5>
+                                          </td>
+                                          <td class="container__middle2" >
+                                            <label class="switch">
+                                              <input type="checkbox">
+                                              <span class="slider round"></span>
+                                            </label>
+                                          </td>
+                                        
+                                        </tr>
+                                        
+                                      </tbody>
+                                    </table>
+                                </div>
+                              </main>
+                              </main>
+                          </div>
+                          </main>
+                          <main class="container__main1">
+                            <div>
+                              <header class="header2">
+                                <div class="table-responsive">
+                                  <table class="table no-wrap user-table mb-0">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col" class="border-0 text-uppercase font-medium" ></th>
                                       </tr>
                                     </thead>
                                     <tbody>
@@ -230,7 +432,163 @@
                       </div>
                     </div>
                   </div>
-
+                  <div class="modal fade" id="templateOneEdit2" tabindex="-1" role="dialog" aria-labelledby="templateOneEditLabelOne" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="templateOneEditLabelOne">Add Schedule
+                          </h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+        
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <form>
+                            <div class="mb-3">
+                              <label for="recipient-name" class="col-form-label">Program Name:</label>
+                              <select class="form-select" multiple aria-label="multiple select example">
+                                <option selected>-----Select One Program-----</option>
+                                <option value="1">Master of Business Administration - General Management</option>
+                                <option value="2">Master of Business Administration - Human Resource</option>
+                                <option value="3">Master of Business Administration - Marketing</option>
+                                <option value="4">Master of Business Administration - Business Analytics</option>
+                                <option value="5">Master of Business Administration - Management</option>
+                              </select>
+                            </div>
+                            <div class="mb-3">
+                              <label for="recipient-name" class="col-form-label">Select Term :</label>
+                              <select class="form-select" multiple aria-label="multiple select example">
+                                <option selected>-----Select One Term-----</option>
+                                <option value="1">Fall-1-2018</option>
+                                <option value="2">Fall-2-2018</option>
+                                <option value="3">Spring-1-2018</option>
+                                <option value="4">Spring-2-2018</option>
+                                <option value="5">Fall-1-2019</option>
+                              </select>
+                            </div>
+                            <div class="mb-3">
+                              <main class="container__main1">
+                                <div>
+                                  <!-- <header class="header2">
+                                    <div class="table-responsive">
+                                      <table class="table no-wrap user-table mb-0">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col" class="border-0 text-uppercase font-medium" ></th>
+                                            <th scope="col" class="border-0 text-uppercase font-medium" >Courses</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td >
+                                               <h5 class="font-medium mb-0">Standard</h5>
+                                            </td>
+                                            <td >
+                                              <span class="badge rounded-pill bg-warning">Financial Management-3</span>
+                                              <span class="badge rounded-pill bg-warning">Employment Law-3</span>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td >
+                                               <h5 class="font-medium mb-0">Expedited</h5>
+                                            </td>
+                                            <td >
+                                             
+                                              <span class="badge rounded-pill bg-primary">Organizational Behavior in Administration-3</span>
+                                              <span class="badge rounded-pill bg-primary">Employment Law-3</span>
+                                            <span class="badge rounded-pill bg-primary">Financial Management-3</span>
+                                            </td>
+                                          </tr>
+                                          
+                                        </tbody>
+                                      </table>
+                                  </div>
+                                  </header> -->
+                                  <main>
+                                    <main class="">
+                                      <div class="table-responsive">
+                                        <table class="table no-wrap user-table mb-0">
+                                          <thead>
+                                            <tr>
+                                              <th scope="col" class="border-0 text-uppercase font-medium" class="container__left2">Courses</th>
+                                              <th scope="col" class="border-0 text-uppercase font-medium" class="container__middle2">Standard</th>
+                                              <th scope="col" class="border-0 text-uppercase font-medium" class="container__right2">Expedited</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr>
+                                              <td class="container__left2">
+                                                  <h5 class="font-medium mb-0">Financial Management-3</h5>
+                                              </td>
+                                              <td class="container__middle2" >
+                                                <label class="switch">
+                                                  <input type="checkbox" checked>
+                                                  <span class="slider round"></span>
+                                                </label>
+                                              </td>
+                                              <td class="container__right2">
+                                                <label class="switch">
+                                                  <input type="checkbox" checked>
+                                                  <span class="slider round"></span>
+                                                </label>
+                                              </td>
+                                             
+                                            </tr>
+                                            <tr>
+                                              <td class="container__left2">
+                                                  <h5 class="font-medium mb-0">Employment Law-3</h5>
+                                              </td>
+                                              <td class="container__middle2" >
+                                                <label class="switch">
+                                                  <input type="checkbox" checked>
+                                                  <span class="slider round"></span>
+                                                </label>
+                                              </td>
+                                              <td class="container__right2">
+                                                <label class="switch">
+                                                  <input type="checkbox" checked>
+                                                  <span class="slider round"></span>
+                                                </label>
+                                              </td>
+                                             
+                                            </tr>
+                                            <tr>
+                                              <td class="container__left2">
+                                                  <h5 class="font-medium mb-0">Organizational Behavior in Administration-3</h5>
+                                              </td>
+                                              <td class="container__middle2" >
+                                                <label class="switch">
+                                                  <input type="checkbox" >
+                                                  <span class="slider round"></span>
+                                                </label>
+                                              </td>
+                                              <td class="container__right2">
+                                                <label class="switch">
+                                                  <input type="checkbox" checked>
+                                                  <span class="slider round"></span>
+                                                </label>
+                                              </td>
+                                             
+                                            </tr>
+                                            
+                                            
+                                          </tbody>
+                                        </table>
+                                    </div>
+                                  </main>
+                                  </main>
+                              </div>
+                              </main>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <a href="#" ><button type="button" class="btn btn-primary" >Add Schedule</button> </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <div class="modal fade" id="templateOneExpedited" tabindex="-1" role="dialog" aria-labelledby="templateOneExpeditedLabelOne" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                       <div class="modal-content">
@@ -251,7 +609,7 @@
                                    <h5 class="font-medium mb-0">Name</h5>
                                 </td>
                                 <td >
-                                  <h5 class="font-medium mb-0" >Isa Kris</h5>
+                                  <input type="text" class="form-control" placeholder="Isa Kris" id="recipient-name">
                                 </td>
                               </tr>
                             
@@ -260,7 +618,7 @@
                                    <h5 class="font-medium mb-0">919#</h5>
                                 </td>
                                 <td >
-                                  <h5 class="font-medium mb-0" >919589548</h5>
+                                  <input type="text" class="form-control" placeholder="919234567" id="recipient-name">
                                 </td>
                               </tr>
                               <tr>
@@ -268,7 +626,8 @@
                                    <h5 class="font-medium mb-0">Email</h5>
                                 </td>
                                 <td >
-                                  <h5 class="font-medium mb-0" >S548750@nwmissouri.edu</h5>
+                                  <input type="text" class="form-control" placeholder="S578548@nwmissouri.edu" id="recipient-name">
+
                                 </td>
                               </tr>
                               <tr>
@@ -276,8 +635,13 @@
                                                                 <h5 class="font-medium mb-0" >Category</h5>
                                                               </td>
                                                                 <td>
-                                                                  <span class="badge rounded-pill bg-primary" >Standard</span>
-                                                                  <span class="badge rounded-pill bg-secondary">Expedited</span></td>
+                                                                  <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" >
+                                                                    <label class="btn btn-outline-success" for="btnradio1">Standard</label>
+                                
+                                                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" checked>
+                                                                    <label class="btn btn-outline-warning" for="btnradio2">Expedited</label>
+                                                                  </div>
                                                               </tr>
                              
                             </tbody>
@@ -298,7 +662,7 @@
                                     <tbody>
                                       <tr>
                                         <td><h5 h5 class="font-medium mb-0">Term</h5></td>
-                                        <td><h5 h5 class="font-medium mb-0">Spring-1-2021</h5></td>
+                                        <td><h5 h5 class="font-medium mb-0">Spring-2-2021</h5></td>
                                       </tr>
                                       
                                       
@@ -313,7 +677,202 @@
                                       <thead>
                                         <tr>
                                           <th scope="col" class="border-0 text-uppercase font-medium" class="container__left2">Courses</th>
-                                          <th scope="col" class="border-0 text-uppercase font-medium" class="container__middle2">Standard</th>
+                                          <th scope="col" class="border-0 text-uppercase font-medium" class="container__middle2">Expedited</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td class="container__left2">
+                                              <h5 class="font-medium mb-0">Financial Management</h5>
+                                          </td>
+                                          <td class="container__middle2" >
+                                            <label class="switch">
+                                              <input type="checkbox" checked>
+                                              <span class="slider round"></span>
+                                            </label>
+                                          </td>
+                                       
+                                         
+                                        </tr>
+                                        <tr>
+                                          <td class="container__left2">
+                                              <h5 class="font-medium mb-0">Employment Law</h5>
+                                          </td>
+                                          <td class="container__middle2" >
+                                            <label class="switch">
+                                              <input type="checkbox">
+                                              <span class="slider round"></span>
+                                            </label>
+                                          </td>
+                                        
+                                        </tr>
+                                        
+                                      </tbody>
+                                    </table>
+                                </div>
+                              </main>
+                              </main>
+                          </div>
+                          </main>
+                          <main class="container__main1">
+                            <div>
+                              <header class="header2">
+                                <div class="table-responsive">
+                                  <table class="table no-wrap user-table mb-0">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col" class="border-0 text-uppercase font-medium" ></th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td><h5 h5 class="font-medium mb-0">Term</h5></td>
+                                        <td><h5 h5 class="font-medium mb-0">Spring-2-2021</h5></td>
+                                      </tr>
+                                      
+                                      
+                                    </tbody>
+                                  </table>
+                              </div>
+                              </header>
+                              <main>
+                                <main class="">
+                                  <div class="table-responsive">
+                                    <table class="table no-wrap user-table mb-0">
+                                      <thead>
+                                        <tr>
+                                          <th scope="col" class="border-0 text-uppercase font-medium" class="container__left2">Courses</th>
+                                          <th scope="col" class="border-0 text-uppercase font-medium" class="container__middle2">Expedited</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td class="container__left2">
+                                              <h5 class="font-medium mb-0">Financial Management</h5>
+                                          </td>
+                                          <td class="container__middle2" >
+                                            <label class="switch">
+                                              <input type="checkbox" checked>
+                                              <span class="slider round"></span>
+                                            </label>
+                                          </td>
+                                       
+                                         
+                                        </tr>
+                                        <tr>
+                                          <td class="container__left2">
+                                              <h5 class="font-medium mb-0">Employment Law</h5>
+                                          </td>
+                                          <td class="container__middle2" >
+                                            <label class="switch">
+                                              <input type="checkbox">
+                                              <span class="slider round"></span>
+                                            </label>
+                                          </td>
+                                        
+                                        </tr>
+                                        
+                                      </tbody>
+                                    </table>
+                                </div>
+                              </main>
+                              </main>
+                          </div>
+                          </main>
+                          <main class="container__main1">
+                            <div>
+                              <header class="header2">
+                                <div class="table-responsive">
+                                  <table class="table no-wrap user-table mb-0">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col" class="border-0 text-uppercase font-medium" ></th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td><h5 h5 class="font-medium mb-0">Term</h5></td>
+                                        <td><h5 h5 class="font-medium mb-0">Spring-2-2021</h5></td>
+                                      </tr>
+                                      
+                                      
+                                    </tbody>
+                                  </table>
+                              </div>
+                              </header>
+                              <main>
+                                <main class="">
+                                  <div class="table-responsive">
+                                    <table class="table no-wrap user-table mb-0">
+                                      <thead>
+                                        <tr>
+                                          <th scope="col" class="border-0 text-uppercase font-medium" class="container__left2">Courses</th>
+                                          <th scope="col" class="border-0 text-uppercase font-medium" class="container__middle2">Expedited</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td class="container__left2">
+                                              <h5 class="font-medium mb-0">Financial Management</h5>
+                                          </td>
+                                          <td class="container__middle2" >
+                                            <label class="switch">
+                                              <input type="checkbox" checked>
+                                              <span class="slider round"></span>
+                                            </label>
+                                          </td>
+                                       
+                                         
+                                        </tr>
+                                        <tr>
+                                          <td class="container__left2">
+                                              <h5 class="font-medium mb-0">Employment Law</h5>
+                                          </td>
+                                          <td class="container__middle2" >
+                                            <label class="switch">
+                                              <input type="checkbox">
+                                              <span class="slider round"></span>
+                                            </label>
+                                          </td>
+                                        
+                                        </tr>
+                                        
+                                      </tbody>
+                                    </table>
+                                </div>
+                              </main>
+                              </main>
+                          </div>
+                          </main>
+                          <main class="container__main1">
+                            <div>
+                              <header class="header2">
+                                <div class="table-responsive">
+                                  <table class="table no-wrap user-table mb-0">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col" class="border-0 text-uppercase font-medium" ></th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td><h5 h5 class="font-medium mb-0">Term</h5></td>
+                                        <td><h5 h5 class="font-medium mb-0">Spring-2-2021</h5></td>
+                                      </tr>
+                                      
+                                      
+                                    </tbody>
+                                  </table>
+                              </div>
+                              </header>
+                              <main>
+                                <main class="">
+                                  <div class="table-responsive">
+                                    <table class="table no-wrap user-table mb-0">
+                                      <thead>
+                                        <tr>
+                                          <th scope="col" class="border-0 text-uppercase font-medium" class="container__left2">Courses</th>
+                                          <th scope="col" class="border-0 text-uppercase font-medium" class="container__middle2">Expedited</th>
                                         </tr>
                                       </thead>
                                       <tbody>
@@ -375,10 +934,18 @@
               <div class="card-body">
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="inputGroup-sizing-default"><i data-feather="search" ></i></span>
-                    <input type="text" class="w-25 p-2" style="border:1px solid grey; border-radius: 5px;" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    <input type="text" class="w-10 p-2" style="border:1px solid grey; border-radius: 5px;" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
 
-                    <div  style="display: flex; flex-direction: row; margin-left:10rem;" >
-                          <div class="dropdown" >
+                    <div  style="display: flex; flex-direction: row; margin-left:2rem;" >
+                      <div class="dropdown" >
+                        <select class="btn btn-info dropdown-toggle"  type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <option>Select Program</option>
+                        <option>ACS</option>
+                        <option>MIS</option>
+                        <option>MBA</option>
+                        </select>
+                        </div>
+                          <div class="dropdown" style="margin-left:2rem;">
                             <select class="btn btn-info dropdown-toggle"  type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               <option>Select Term</option>
                             <option>Fall</option>
@@ -397,6 +964,7 @@
                           <select class="btn btn-info dropdown-toggle" id='date-dropdown'>
                           </select>
                         </div>
+                        
                       </div>
                   </div>
               </div>
@@ -404,6 +972,7 @@
                   <table class="table no-wrap user-table mb-0">
                     <thead>
                       <tr>
+                        <th scope="col" class="border-0 text-uppercase font-medium">Select</th>
                         <th scope="col" class="border-0 text-uppercase font-medium">Name</th>
                         <th scope="col" class="border-0 text-uppercase font-medium">919#</th>
                         <th scope="col" class="border-0 text-uppercase font-medium">Start Term</th>
@@ -415,6 +984,12 @@
                     </thead>
                     <tbody>
                       <tr>
+                        <td>
+                          <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                            <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="btncheck1"> <i data-feather="check-circle" class="btn-circle"  ></i></label>
+                          </div>
+                       </td>
                         <td>
                            <a  data-bs-toggle="modal" data-bs-target="#exampleModalScrollable" data-whatever="@getbootstraptemplateoneSend" ><h5 class="font-medium mb-0">Olivia Mal</h5> </a> 
                         </td>
@@ -442,6 +1017,12 @@
                         </td>
                       </tr>
                       <tr>
+                        <td>
+                          <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                            <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="btncheck2"> <i data-feather="check-circle" class="btn-circle"  ></i></label>
+                          </div>
+                       </td>
                         <td>
                            <a  data-bs-toggle="modal" data-bs-target="#templateOneExpedited" data-whatever="@getbootstraptemplateOneExpedited" ><h5 class="font-medium mb-0">Isa Kris</h5> </a> 
                         </td>
