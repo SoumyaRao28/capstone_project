@@ -31,84 +31,29 @@
                             </a>
                                     </li>
                            <!-- Nav item -->
-                           <li class="nav-item">
-                            <a class="nav-link has-arrow @@if (context.page_group !== 'courses') { collapsed }" href="#!" data-bs-toggle="collapse" data-bs-target="#navCourses" aria-expanded="false" aria-controls="navCourses">
-                                <i data-feather="book-open" class="nav-icon icon-xs me-2">
-                                </i> Courses
-                            </a>
-                            <div id="navCourses" class="collapse @@if (context.page_group === 'courses') { show }" data-bs-parent="#sideNavbar">
-                                <ul class="nav flex-column">
-                                    <li class="nav-item">
-                                        <a class="nav-link @@if (context.page === 'signin') { active }" href="#"> Add Course</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link @@if (context.page === 'signup') { active } " href="#"> Update Course</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link @@if (context.page === 'forgetpassword') { active }" href="#">
-                                            View Course
-                                </a>
-                                    </li>
+       <li class="nav-item">
+        <a class="nav-link @@if (context.page === 'borders') { active }" href="coorCourses.html" aria-expanded="false">
+            <i data-feather="book-open" class="nav-icon icon-xs me-2">
+            </i>  Courses
+        </a>
+                </li>
+       <!-- Nav item -->
 
-                                </ul>
-                            </div>
-                        </li>
+                <li class="nav-item">
+                    <a class="nav-link @@if (context.page === 'borders') { active }" href="coorTerms.html" aria-expanded="false">
+                        <i data-feather="calendar" class="nav-icon icon-xs me-2">
+                        </i>  Terms
+                    </a>
+                            </li>
+
                         
-
-                        <!-- Nav item -->
-                        <li class="nav-item">
-                            <a class="nav-link has-arrow @@if (context.page_group !== 'components') { collapsed }" href="#!" data-bs-toggle="collapse" data-bs-target="#navComponents" aria-expanded="false" aria-controls="navComponents">
-                                <i data-feather="calendar" class="nav-icon icon-xs me-2" >
-                            </i> Terms
-                            </a>
-                            <div id="navComponents" class="collapse @@if (context.page_group === 'components') { show }" data-bs-parent="#sideNavbar">
-                                <ul class="nav flex-column">
-                                    <li class="nav-item">
-                                        <a class="nav-link @@if (context.page === 'accordions') { active }" href="#" aria-expanded="false">
-                                              Add Terms
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link @@if (context.page === 'alerts') { active }" href="#" aria-expanded="false">
-                                            Update Terms
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link @@if (context.page === 'badge') { active }" href="#" aria-expanded="false">
-                                            View Terms
-                                        </a>
-                                    </li>
-                                
-                                </ul>
-                            </div>
-                        </li>
-                       
 
                             <!-- Nav item -->
                             <li class="nav-item">
-                                <a class="nav-link has-arrow @@if (context.page_group !== 'utilities') { collapsed }" href="#!" data-bs-toggle="collapse" data-bs-target="#navUtilities" aria-expanded="false" aria-controls="navUtilities">
+                                <a class="nav-link @@if (context.page === 'borders') { active }" href="coorCarousel.html" aria-expanded="false">
                                     <i data-feather="bookmark" class="nav-icon icon-xs me-2" >
                                 </i> Carousel
                                 </a>
-                                <div id="navUtilities" class="collapse @@if (context.page_group === 'utilities') { show }" data-bs-parent="#sideNavbar">
-                                    <ul class="nav flex-column">
-                                        <li class="nav-item">
-                                            <a class="nav-link @@if (context.page === 'typography') { active }" href="#" aria-expanded="false">
-                                                  Add Carousel
-                                            </a>
-                                        </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link @@if (context.page === 'borders') { active }" href="#" aria-expanded="false">
-                                                     Update Carousel
-                                                </a>
-                                            </li>
-                                            <li class="nav-item">
-                                              <a class="nav-link @@if (context.page === 'colors') { active }" href="#" aria-expanded="false">
-                                                 View Carousel
-                                              </a>
-                                          </li>
-                                        </ul>
-                                        </div>
                                         </li>
                         
                                          <!-- Nav item -->
@@ -119,29 +64,10 @@
                       
                         <!-- Nav item -->
                         <li class="nav-item">
-                            <a class="nav-link has-arrow @@if (context.page_group !== 'Student') { collapsed }" href="#!" data-bs-toggle="collapse" data-bs-target="#navStudent" aria-expanded="false" aria-controls="navStudent">
+                            <a class="nav-link @@if (context.page === 'borders') { active }" href="coorStudent.html" aria-expanded="false">
                                 <i data-feather="user" class="nav-icon icon-xs me-2" >
                             </i> Student
                             </a>
-                            <div id="navStudent" class="collapse @@if (context.page_group === 'Student') { show }" data-bs-parent="#sideNavbar">
-                                <ul class="nav flex-column">
-                                    <li class="nav-item">
-                                        <a class="nav-link @@if (context.page === 'typography') { active }" href="#" aria-expanded="false">
-                                            Add Students
-                                        </a>
-                                    </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link @@if (context.page === 'borders') { active }" href="#" aria-expanded="false">
-                                                Update Student
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                        <a class="nav-link @@if (context.page === 'colors') { active }" href="#" aria-expanded="false">
-                                            View Students
-                                        </a>
-                                    </li>
-                                    </ul>
-                                    </div>
                                     </li>
 
                   <!-- Nav item -->
@@ -151,24 +77,10 @@
                
                         <!-- Nav item -->
                         <li class="nav-item">
-                            <a class="nav-link has-arrow @@if (context.page_group !== 'Email') { collapsed }" href="#!" data-bs-toggle="collapse" data-bs-target="#navEmail" aria-expanded="false" aria-controls="navEmail">
+                            <a class="nav-link @@if (context.page === 'borders') { active }" href="coorEmail.html" aria-expanded="false">
                                 <i data-feather="mail" class="nav-icon icon-xs me-2" >
                             </i> Email
                             </a>
-                            <div id="navEmail" class="collapse @@if (context.page_group === 'Email') { show }" data-bs-parent="#sideNavbar">
-                                <ul class="nav flex-column">
-                                    <li class="nav-item">
-                                        <a class="nav-link @@if (context.page === 'typography') { active }" href="#" aria-expanded="false">
-                                            Manage Template
-                                        </a>
-                                    </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link @@if (context.page === 'borders') { active }" href="#" aria-expanded="false">
-                                                Send Emails
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    </div>
                                     </li>
                                     
                     </ul>

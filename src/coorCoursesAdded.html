@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    @@include("partials/head.html")
+    <title>Dashboard | Online Program Student Schedule</title>
+  </head>
+
+  <body>
+    <div id="db-wrapper">
+    <!-- navbar vertical -->
+    @@include('partials/navbar-vertical-coor.html', {
+      "page": "dashboard",
+
+      })
+       <!-- Page content -->
+      <div id="page-content">
+        @@include("partials/header-coor.html")
+        <!-- Container fluid -->
+        <div class="bg-primary pt-10 pb-21" style="background-color:black"></div>
+        <div class="container-fluid mt-n22 px-6" >
+          <div class="row" >
+            <div class="col-lg-12 col-md-12 col-12">
+                <!-- Page header -->
+                <div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="mb-2 mb-lg-0">
+                      <h3 class="mb-0 fw-bold text-white">Manage Courses</h3>
+                    </div>
+                    <div>
+                      <a href="#"><button type="button" class="btn btn-white" data-bs-toggle="modal" data-bs-target="#exampleModal" data-whatever="@getbootstrap">Add Course</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelOne" aria-hidden="true" data-target=".bd-example-modal-lg">
+                  <div class="modal-dialog modal-md" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabelOne">Create New Course
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Course Code:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+
+                            <label for="recipient-name" class="col-form-label">Course Name:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                          </div>
+                          
+                          <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Course Description:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+                            <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Course Credit:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Duration of Course: </label>
+                            <input type="text" class="form-control" id="recipient-name">
+                            
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a href="adminCoursesAdded.html" ><button type="button" class="btn btn-primary" >Save</button> </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- row  -->
+          <div>
+          </div>
+          <div class="modal fade" id="templateOne" tabindex="-1" role="dialog" aria-labelledby="templateOneLabelOne" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="templateOneLabelOne">View Program
+                  </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label">Program Code:</label>
+                      <input type="text" class="form-control" id="recipient-name" value="PGM-100" disabled>
+
+                      <label for="message-text" class="col-form-label">Program Name:</label>
+                      <input type="text" class="form-control" id="recipient-name" value="Master of Business Administration - General Management" disabled>
+
+                      <label for="recipient-name" class="col-form-label">Program Start Date:</label>
+                      <input type="text" class="form-control" id="recipient-name" value="01/01/2021" disabled>
+
+                      
+                      <label for="message-text" class="col-form-label">Program Description:</label>
+                      <textarea class="form-control" id="message-text" placeholder="With supporting text below as a natural lead-in to additional content." disabled></textarea>
+                     
+                      
+                      <label for="recipient-name" class="col-form-label">Standard Count:</label>
+                      <input type="text" class="form-control" id="recipient-name" value="12" disabled>
+                      <label for="recipient-name" class="col-form-label">Expedited Count:</label>
+                      <input type="text" class="form-control" id="recipient-name" value="5" disabled>
+                    </div>
+                    <div class="mb-3">
+                      
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="templateOneEdit" tabindex="-1" role="dialog" aria-labelledby="templateOneEditLabelOne" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="templateOneEditLabelOne">Edit Course
+                  </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label">Course Name:</label>
+                      <input type="text" class="form-control" id="recipient-name" value="Data Mining For Business Applications">
+                      <label for="message-text" class="col-form-label">Course Description:</label>
+                      <textarea class="form-control" id="message-text" placeholder="With supporting text below as a natural lead-in to additional content."></textarea>
+                      <label for="recipient-name" class="col-form-label">Credit Hours:</label>
+                      <input type="text" class="form-control" id="recipient-name" value="12" >
+                      <label for="recipient-name" class="col-form-label">Duration of Course:</label>
+                      <input type="text" class="form-control" id="recipient-name" value="5" >
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <a href="adminCoursesEdit.html" ><button type="button" class="btn btn-primary" >Save</button> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="templateOneSend" tabindex="-1" role="dialog" aria-labelledby="templateOneSendLabelOne" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="templateOneLabelTwoSend">Add Coordinators
+                  </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label">Select Program:</label>
+                      <select class="form-select" multiple aria-label="multiple select example">
+                        <option selected>-----Select One/More Program-----</option>
+                        <option value="1">Master of Business Administration - General Management</option>
+                        <option value="2">Master of Business Administration - Human Resource</option>
+                        <option value="3">Master of Business Administration - Marketing</option>
+                        <option value="4">Master of Business Administration - Business Analytics</option>
+                        <option value="5">Master of Business Administration - Management</option>
+                      </select>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <a href="#" ><button type="button" class="btn btn-primary" >Send</button> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="templateTwo" tabindex="-1" role="dialog" aria-labelledby="templateOneLabelTwo" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="templateOneLabelTwo">Edit Program
+                  </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label">Program Code:</label>
+                      <input type="text" class="form-control" id="recipient-name" value="Schedule Letter Template" disabled>
+                    </div>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label">Message:</label>
+                      <textarea class="form-control" id="message-text" placeholder="With supporting text below as a natural lead-in to additional content." disabled></textarea>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="templateTwoEdit" tabindex="-1" role="dialog" aria-labelledby="templateOneLabelTwoEdit" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="templateOneLabelTwoEdit">Welcome Letter Template
+                  </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label">Title:</label>
+                      <input type="text" class="form-control" id="recipient-name" value="Schedule Letter Template" >
+                    </div>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label">Message:</label>
+                      <textarea class="form-control" id="message-text" placeholder="With supporting text below as a natural lead-in to additional content." ></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <a href="#" ><button type="button" class="btn btn-success" >Save</button> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="templateTwoSend" tabindex="-1" role="dialog" aria-labelledby="templateOneLabelTwoSend" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="templateOneLabelTwoSend">Send Email
+                  </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label">Select Program:</label>
+                      <select class="form-select" multiple aria-label="multiple select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <a href="#" ><button type="button" class="btn btn-success" >Send</button> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Button trigger modal -->
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="templateOneLabelTwoSend">Add Coordinators
+                  </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label">Select Program:</label>
+                      <select class="form-select" multiple aria-label="multiple select example">
+                        <option selected>-----Select One/More Program-----</option>
+                        <option value="1">Master of Business Administration - General Management</option>
+                        <option value="2">Master of Business Administration - Human Resource</option>
+                        <option value="3">Master of Business Administration - Marketing</option>
+                        <option value="4">Master of Business Administration - Business Analytics</option>
+                        <option value="5">Master of Business Administration - Management</option>
+                      </select>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <a href="adminCoursesClone.html" ><button type="button" class="btn btn-primary" >Send</button> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-6">
+            <div class="col-md-12 col-12">
+              <!-- card  -->
+             
+              <div class="card" style="display: flex; flex-direction: column; padding:20px; ">
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default"><i data-feather="search" ></i></span>
+                    <input type="text" class="w-25 p-2" style="border:1px solid grey; border-radius: 5px;" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                  </div>
+                <div style="display: flex; flex-direction: row; ">
+                  <div class="col-xl-3 col-lg-6 col-md-12 col-12 mt-6" style="margin: 0 70px 0 10px; ">
+                    <!-- card -->
+                    <div class="card" style="width: 20rem; padding: 10px; height:15rem; height:15rem;">
+                      <!-- card body -->
+                      <div class="card-body">
+                        <!-- heading -->
+                        <div class="d-flex justify-content-between align-items-center
+                          mb-3">
+                          <div>
+                            <h4 class="mb-0"> <a href="#"  data-bs-toggle="modal" data-bs-target="#templateOne" data-whatever="@getbootstraptemplateone" style=" color: #0060B6;
+                              text-decoration: none;"> Business Analytics & Decision Modeling</a></h4>
+                          </div>
+                        </div>
+                        <!-- project number -->
+                        <div>
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                        <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#templateOneEdit" data-whatever="@getbootstraptemplateoneEdit"><i data-feather="edit" ></i></a>
+                      <!-- <a href="#" class="btn btn-light" id='send' data-bs-toggle="modal" data-bs-target="#templateOneSend" data-whatever="@getbootstraptemplateoneSend" ><i data-feather="plus" ></i></a> -->
+                      <a href="adminCoursesDelete.html" class="btn btn-light"><i data-feather="trash-2" ></i></a>
+                     <a href="#" class="btn btn-light" id='send' data-bs-toggle="modal" data-bs-target="#exampleModalScrollable" data-whatever="@getbootstraptemplateoneSend" ><i data-feather="copy" ></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-6 col-md-12 col-12 mt-6" style="margin: 0 70px 0 10px; ">
+                    <!-- card -->
+                    <div class="card" style="width: 20rem; padding: 10px; height:15rem; height:15rem;">
+                      <!-- card body -->
+                      <div class="card-body">
+                        <!-- heading -->
+                        <div class="d-flex justify-content-between align-items-center
+                          mb-3">
+                          <div>
+                            <h4 class="mb-0"> <a href="#"  data-bs-toggle="modal" data-bs-target="#templateOne" data-whatever="@getbootstraptemplateone" style=" color: #0060B6;
+                              text-decoration: none;">Data Mining For Business Applications</a></h4>
+                          </div>
+                        </div>
+                        <!-- project number -->
+                        <div>
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                        <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#templateOneEdit" data-whatever="@getbootstraptemplateoneEdit"><i data-feather="edit" ></i></a>
+                      <!-- <a href="#" class="btn btn-light" id='send' data-bs-toggle="modal" data-bs-target="#templateOneSend" data-whatever="@getbootstraptemplateoneSend" ><i data-feather="plus" ></i></a> -->
+                      <a href="adminCoursesDelete.html" class="btn btn-light"><i data-feather="trash-2" ></i></a>
+                     <a href="#" class="btn btn-light" id='send' data-bs-toggle="modal" data-bs-target="#exampleModalScrollable" data-whatever="@getbootstraptemplateoneSend" ><i data-feather="copy" ></i></a>
+                      </div>
+                    </div>
+                  </div>                  
+                  <div class="col-xl-3 col-lg-6 col-md-12 col-12 mt-6" style="margin: 0 70px 0 10px; ">
+                    <!-- card -->
+                    <div class="card" style="width: 20rem; padding: 10px; height:15rem; ">
+                      <!-- card body -->
+                      <div class="card-body">
+                        <!-- heading -->
+                        <div class="d-flex justify-content-between align-items-center
+                          mb-3">
+                          <div>
+                            <h4 class="mb-0"> <a href="#"  data-bs-toggle="modal" data-bs-target="#templateOne" data-whatever="@getbootstraptemplateone" style=" color: #0060B6;
+                              text-decoration: none;">Advanced Human Resource Management</a></h4>
+                          </div>
+                        </div>
+                        <!-- project number -->
+                        <div>
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                        <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#templateOneEdit" data-whatever="@getbootstraptemplateoneEdit"><i data-feather="edit" ></i></a>
+                      
+                      <!-- <a href="#" class="btn btn-light" id='send' data-bs-toggle="modal" data-bs-target="#templateOneSend" data-whatever="@getbootstraptemplateoneSend"><i data-feather="plus" ></i></a> -->
+
+                      <a href="adminCoursesDelete.html" class="btn btn-light"><i data-feather="trash-2" ></i></a>
+                     <a href="#" class="btn btn-light" id='send' data-bs-toggle="modal" data-bs-target="#templateOneSend" data-whatever="@getbootstraptemplateoneSend" ><i data-feather="copy" ></i></a>
+                      </div>
+                    </div>
+                  </div>
+
+          </div>
+          <div style="display: flex; flex-direction: row; ">
+            <div class="col-xl-3 col-lg-6 col-md-12 col-12 mt-6" style="margin: 0 70px 0 10px; ">
+              <!-- card -->
+              <div class="card" style="width: 20rem; padding: 10px; height:15rem; ">
+                <!-- card body -->
+                <div class="card-body">
+                  <!-- heading -->
+                  <div class="d-flex justify-content-between align-items-center
+                    mb-3">
+                    <div>
+                      <h4 class="mb-0"> <a href="#"  data-bs-toggle="modal" data-bs-target="#templateOne" data-whatever="@getbootstraptemplateone" style=" color: #0060B6;
+                        text-decoration: none;">Business Decision Analysis Tools</a></h4>
+                                                                                          
+                    </div>
+                  </div>
+                  <!-- project number -->
+                  <div>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  </div>
+                  <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#templateOneEdit" data-whatever="@getbootstraptemplateoneEdit"><i data-feather="edit" ></i></a>
+                
+                <!-- <a href="#" class="btn btn-light" id='send' data-bs-toggle="modal" data-bs-target="#templateOneSend" data-whatever="@getbootstraptemplateoneSend"><i data-feather="plus" ></i></a> -->
+
+                <a href="adminCoursesDelete.html" class="btn btn-light"><i data-feather="trash-2" ></i></a>
+               <a href="#" class="btn btn-light" id='send' data-bs-toggle="modal" data-bs-target="#clone" data-whatever="@clone" ><i data-feather="copy" ></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-12 col-12 mt-6" style="margin: 0 70px 0 10px; ">
+              <!-- card -->
+              <div class="card" style="width: 20rem; padding: 10px; height:15rem; ">
+                <!-- card body -->
+                <div class="card-body">
+                  <!-- heading -->
+                  <div class="d-flex justify-content-between align-items-center
+                    mb-3">
+                    <div>
+                      <h4 class="mb-0"> <a href="#"  data-bs-toggle="modal" data-bs-target="#templateOne" data-whatever="@getbootstraptemplateone" style=" color: #0060B6;
+                        text-decoration: none;">Organizational Behavior in Administration</a></h4>
+                    </div>
+                  </div>
+                  <!-- project number -->
+                  <div>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  </div>
+                  <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#templateOneEdit" data-whatever="@getbootstraptemplateoneEdit"><i data-feather="edit" ></i></a>
+                
+                <!-- <a href="#" class="btn btn-light" id='send' data-bs-toggle="modal" data-bs-target="#templateOneSend" data-whatever="@getbootstraptemplateoneSend"><i data-feather="plus" ></i></a> -->
+
+                <a href="adminCoursesDelete.html" class="btn btn-light"><i data-feather="trash-2" ></i></a>
+                     <a href="#" class="btn btn-light" id='send' data-bs-toggle="modal" data-bs-target="#templateOneSend" data-whatever="@getbootstraptemplateoneSend" ><i data-feather="copy" ></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-12 col-12 mt-6" style="margin: 0 70px 0 10px; ">
+              <!-- card -->
+              <div class="card" style="width: 20rem; padding: 10px; height:15rem; ">
+                <!-- card body -->
+                <div class="card-body">
+                  <!-- heading -->
+                  <div class="d-flex justify-content-between align-items-center
+                    mb-3">
+                    <div>
+                      <h4 class="mb-0"> <a href="#"  data-bs-toggle="modal" data-bs-target="#templateOne" data-whatever="@getbootstraptemplateone" style=" color: #0060B6;
+                        text-decoration: none;">Advanced Marketing Communication</a></h4>
+                        
+                    </div>
+                  </div>
+                  <!-- project number -->
+                  <div>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  </div>
+                  <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#templateOneEdit" data-whatever="@getbootstraptemplateoneEdit"><i data-feather="edit" ></i></a>
+               
+                <!-- <a href="#" class="btn btn-light" id='send' data-bs-toggle="modal" data-bs-target="#templateOneSend" data-whatever="@getbootstraptemplateoneSend"><i data-feather="plus" ></i></a> -->
+                <a href="adminCoursesDelete.html" class="btn btn-light"><i data-feather="trash-2" ></i></a>
+                     <a href="#" class="btn btn-light" id='send' data-bs-toggle="modal" data-bs-target="#templateOneSend" data-whatever="@getbootstraptemplateoneSend" ><i data-feather="copy" ></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-12 col-12 mt-6" style="margin: 0 70px 0 10px; ">
+              <!-- card -->
+
+            </div>
+    </div>
+          
+          </div>
+          <!-- row  -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    @@include("partials/scripts.html")
+
+    
+      <style type="text/css">
+        .btn-circle.btn-lg, .btn-group-lg>.btn-circle.btn {
+          width: 50px;
+          height: 50px;
+          font-size: 18px;
+          line-height: 23px;
+      }
+
+      [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+        cursor: pointer;
+    }
+    .btn-circle {
+      border-radius: 100%;
+      width: 40px;
+      height: 40px;
+      padding: 10px;
+  }
+  .btn-circle-disable{
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+  .btn-circle-enable {
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+
+  .enable{
+    width: 24px;
+  }
+  .btn-circle-disable:hover{
+    background-color: rgb(226, 36, 36);
+  }
+  .btn-circle-enable:hover{
+    background-color: green;
+  }
+      </style>
+  </body>
+</html>
